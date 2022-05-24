@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Intro from './Components/Intro/Intro';
+import Experience from './Components/Experience/Experience';
+import Education from './Components/Education/Education';
+import Projects from './Components/Projects/Projects';
+import Hobbies from './Components/Hobbies/Hobbies';
+import Contact from './Components/Contact/Contact';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Intro />
+    <Education />
+    <Experience />
+    <Projects/>
+    <Hobbies/>
+    <Contact/>
   </React.StrictMode>
 );
 
