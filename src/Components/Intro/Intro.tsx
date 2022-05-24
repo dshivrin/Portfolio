@@ -5,10 +5,10 @@ const Intro = () =>{
   return (
     <div className="container">
       <div>
-        My name is Dima Shivrin
+        Dima Shivrin
       </div>
       <div>
-        I am a Full-Stack developer
+        I am a Full-Stack web developer
       </div>
     </div>
   );

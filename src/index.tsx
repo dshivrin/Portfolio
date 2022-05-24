@@ -8,6 +8,7 @@ import Education from './Components/Education/Education';
 import Projects from './Components/Projects/Projects';
 import Hobbies from './Components/Hobbies/Hobbies';
 import Contact from './Components/Contact/Contact';
+import AboutMe from './Components/AboutMe/AboutMe';
 
 
 const root = ReactDOM.createRoot(
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Intro />
+    <AboutMe/>
     <Education />
     <Experience />
     <Projects/>
