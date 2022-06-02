@@ -25,8 +25,12 @@
   text-align: center;
   flex-direction: column;
 
+  .header{
+      justify-items: start;
+  }
+
   .name {
     font-family: Madelican;
-    font-size: 4.5rem;
+    font-size: clamp(1.5em, 12vw, 4.5em); //clamp(min, value, maximum), base value is set in 
   }
 }
