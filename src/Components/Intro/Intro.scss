@@ -1,8 +1,32 @@
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    justify-items: unset;
-    text-align: center;
-    flex-direction: column;
+@font-face {
+  font-family: "StylishCalligraphy";
+  src: local("StylishCalligraphy"),
+    url(../../Fonts/StylishCalligraphy.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Salazar";
+  src: local("Salazar"), url(../../Fonts/Salazar.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Madelican";
+  src: local("Madelican"), url(../../Fonts/Madelican.otf) format("truetype");
+  font-weight: normal;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: unset;
+  text-align: center;
+  flex-direction: column;
+
+  .name {
+    font-family: Madelican;
+    font-size: 4.5rem;
+  }
 }

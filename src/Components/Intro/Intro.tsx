@@ -1,12 +1,13 @@
 
 import "./Intro.scss";
+import '../../Fonts/StylishCalligraphy.ttf'; 
 
 const Intro = () =>{
   return (
     <div id="intro" className="container">
-      <div>
+      <h1 className="name">
         Dima Shivrin
-      </div>
+      </h1>
       <div>
         I am a Full-Stack web developer
       </div>

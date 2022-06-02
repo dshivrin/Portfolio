@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Intro from "./Components/Intro/Intro";
 import Experience from "./Components/Experience/Experience";
 import Education from "./Components/Education/Education";
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navigation />
-      <div>
+      <div className="main-container">
         <Intro />
         <AboutMe />
         <Education />
