@@ -3,7 +3,7 @@ import "./Intro.scss";
 
 const Intro = () =>{
   return (
-    <div className="container">
+    <div id="intro" className="container">
       <div>
         Dima Shivrin
       </div>

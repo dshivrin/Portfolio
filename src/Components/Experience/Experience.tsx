@@ -3,7 +3,7 @@ import "./Experience.scss";
 
 const Experience = () =>{
   return (
-    <div className="container">
+    <div id="experience" className="container">
       <p className="title">
         Work experience:
       </p>
