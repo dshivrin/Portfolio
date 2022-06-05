@@ -1,10 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    //find default font for the page
-  }
-.main-container{
-    background-color: rgb(50, 125, 200, 0.8);
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 0;
 }
+
+//find a better default font for the page
+body{
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+}
+
+.main-container {
+  background-color: rgb(50, 125, 200, 0.8);
+}
+
+
