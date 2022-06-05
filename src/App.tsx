@@ -7,6 +7,7 @@ import Hobbies from "./Components/Hobbies/Hobbies";
 import Contact from "./Components/Contact/Contact";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Navigation from "./Components/Navigation/Navigation";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Projects />
         <Hobbies />
         <Contact />
+        <Footer/>
       </div>
     </div>
   );
