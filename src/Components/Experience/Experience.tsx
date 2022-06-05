@@ -1,8 +1,9 @@
-import "./Experience.scss";
+
+import { Container } from './../StyledComponents/Container';
 
 const Experience = () => {
   return (
-    <div id="experience" className="container">
+    <Container id="experience">
       {/* TODO: Animate the title */}
       <h1 className="title">Work experience:</h1>
       <br />
@@ -47,7 +48,7 @@ const Experience = () => {
         </p>
         <p>Feb 2020 - May 2022</p>
       </div>
-    </div>
+    </Container>
   );
 };
 

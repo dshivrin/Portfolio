@@ -1,9 +1,9 @@
 
-import "./Projects.scss";
+import { Container } from "../StyledComponents/Container";
 
 const Projects = () =>{
   return (
-    <div className="container">
+    <Container>
       <p>
       Here you can see some of my "pet projects". I  
       </p>
@@ -19,7 +19,7 @@ const Projects = () =>{
       <div className="project">
         Some Arduino
       </div>
-    </div>
+    </Container>
   );
 }
 

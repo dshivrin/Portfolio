@@ -8,6 +8,7 @@ import Contact from "./Components/Contact/Contact";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
+import AboutThisApp from "./Components/AboutThisApp/AboutThisApp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Projects />
         <Hobbies />
         <Contact />
+        <AboutThisApp/>
         <Footer/>
       </div>
     </div>

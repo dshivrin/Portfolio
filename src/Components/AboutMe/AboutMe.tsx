@@ -1,6 +1,6 @@
-import "./AboutMe.scss";
+
 import styled from "styled-components";
-import { Container } from "../StyledComponents/StyledComponents";
+import { Container } from "../StyledComponents/Container";
 
 //TODO: Write a paragraph about yourself
 //Add an animated "About me" title (thinking slide from the left, large font, light color)

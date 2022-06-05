@@ -1,9 +1,9 @@
 
-import "./AboutThisApp.scss";
+import { Container } from "../StyledComponents/Container";
 
 const AboutThisApp = () =>{
   return (
-    <div className="container">
+    <Container>
       <p>About this app</p>
       <p className="contact">
           This potfolio project was written in React v18.1.0 
@@ -12,7 +12,7 @@ const AboutThisApp = () =>{
       <p>
           Inspired by 
       </p>
-    </div>
+    </Container>
   );
 }
 

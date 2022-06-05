@@ -1,12 +1,13 @@
-import "./Education.scss";
+
+import { Container } from './../StyledComponents/Container';
 
 const Education = () => {
   return (
-    <div className="container">
+    <Container className="container">
       <p>Education:</p>
       <div className="Description">Holtz highschool</div>
       <div className="Description">John Bryce collage</div>
-    </div>
+    </Container>
   );
 };
 
