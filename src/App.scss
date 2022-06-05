@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
-@font-face {
-  font-family: "StylishCalligraphy";
-  src: local("StylishCalligraphy"),
-    url(./Fonts/StylishCalligraphy.ttf) format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Salazar";
-  src: local("Salazar"), url(./Fonts/Salazar.ttf) format("truetype");
-  font-weight: normal;
-}
 
 @font-face {
   font-family: "Madelican";
@@ -33,8 +21,6 @@ body{
   font-family: "Signika Negative", sans-serif;
   font-weight: 300;
 }
-
-
 
 .main-container {
   background-color: rgb(50, 125, 200, 0.8);
