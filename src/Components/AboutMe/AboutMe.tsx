@@ -8,7 +8,7 @@ const AboutMe = () =>{
     <div className="container">
       <h1>ABOUT ME</h1>
       <p>
-       I'm a full-stack web developer since 2015. I
+       I'm a full-stack web developer since 2015. I'm an autodidact person. 
       </p>
       
     </div>
