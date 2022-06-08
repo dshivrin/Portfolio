@@ -21,9 +21,7 @@ const skills = {
 
 const AboutMe = () => {
   return (
-    // <AboutMeContainer className="about-me">
-
-    // </AboutMeContainer>
+   //THIS DESIGN IS NOT RESPONSIVE!! NEED TO FIX
 
     <div style={ContainerStyle}>
       <h1 className="title">ABOUT ME</h1>
@@ -64,7 +62,6 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-
         <div>
           <img width={350} height={350} src={profileImage} />
         </div>
