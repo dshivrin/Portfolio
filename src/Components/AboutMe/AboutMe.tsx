@@ -2,10 +2,6 @@ import styled from "styled-components";
 import { Container } from "../StyledComponents/Container";
 const profileImage = require("../../Media/profile picture.jpg");
 
-const AboutMeContainer = styled(Container)`
-  flex-direction: row;
-  align-items: center;
-`;
 
 const ContainerStyle = {
   maxWidth: "900px",
@@ -14,6 +10,7 @@ const ContainerStyle = {
 
 const InnerStyle = {
   display: "flex",
+  gap: "25px"
 };
 
 const skills = {
