@@ -8,5 +8,5 @@
 .section-title::before {
   counter-increment: title-counter;
   content: "0" counter(title-counter) ". ";
-  color: #64ffda;
+  color: var(--light-green);
 }
