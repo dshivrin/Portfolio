@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const StyledList = styled.ul`
-  list-style: none;
-  //instead of ::before psuedo element there is now a marker alement
+  list-style-type: none;
+ 
+  li {
+    padding-left: 5px; //<== because the marker pseudo element refused to move
+  }
+
   li::marker {
     content: "🠚";
     color: var(--light-green);
     unicode-bidi: isolate;
-    //padding:10px <== padding and margin has no effect on marker
   }
 `;
