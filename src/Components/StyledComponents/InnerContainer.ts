@@ -1,3 +1,4 @@
+//Just a quick responsive component 
 import styled from "styled-components";
 
 export const StyledInner = styled.div`

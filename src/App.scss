@@ -41,3 +41,9 @@ body {
   counter-reset: title-counter nav-counter;
   //counter-reset: nav-counter; <=== this breaks the count for that variable
 }
+
+//general responsive part
+
+@media (max-width: 768px) {
+  //override styled components? 
+}
