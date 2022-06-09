@@ -1,15 +1,19 @@
-
-.section-title{
+.section-title {
   margin-bottom: 10px;
 }
 
 //todo: find some font for the numbers
 .section-title::before {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   color: var(--light-green);
   font-size: 0.8em;
   font-weight: 200;
   counter-increment: title-counter;
   content: "0" counter(title-counter) ". ";
-  
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding: 0 20px;
+  }
 }

@@ -1,37 +1,39 @@
 import styled from "styled-components";
 import { Container } from "../StyledComponents/Container";
+import { StyledInner } from "../StyledComponents/InnerContainer";
 import Title from "../Title/Title";
 import SkillsList from "./SkillsList";
 const profileImage = require("../../Media/profile picture.jpg");
-
 
 const ContainerStyle = {
   maxWidth: "900px",
   margin: "0 auto",
 };
 
-const InnerStyle = {
-  display: "flex",
-  gap: "25px"
-};
+// const InnerStyle = {
+//   display: "flex",
+//   gap: "25px",
+// };
 
 const skillsStyle = {
   display: "flex",
   alignContent: "center",
-  justifyContent: "space-evenly"
-}
+  justifyContent: "space-evenly",
+};
 
-const FrontEndSkills = ["Angular (JS/2+)","React", "JQuery"];
+
+
+const FrontEndSkills = ["Angular (JS/2+)", "React", "JQuery"];
 const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
 const DBSkills = ["SQL", "MongoDB"];
 
 const AboutMe = () => {
   return (
-   //THIS DESIGN IS NOT RESPONSIVE!! NEED TO FIX
+    //THIS DESIGN IS NOT RESPONSIVE!! NEED TO FIX
 
     <div style={ContainerStyle}>
-      <Title text="About Me"/>
-      <div style={InnerStyle}>
+      <Title text="About Me" />
+      <StyledInner>
         <div>
           <p>
             I'm a full-stack web developer based in Israel. Professionally I
@@ -49,18 +51,18 @@ const AboutMe = () => {
               school elephant i dont get it college derp joke fap fap genius
               bart asian.
             </p>
-            <br/>
+            <br />
             <div style={skillsStyle}>
-              <SkillsList skills={FrontEndSkills}/>
-              <SkillsList skills={BackEndSkills}/>
-              <SkillsList skills={DBSkills}/>
+              <SkillsList skills={FrontEndSkills} />
+              <SkillsList skills={BackEndSkills} />
+              <SkillsList skills={DBSkills} />
             </div>
           </div>
         </div>
         <div>
           <img width={350} height={350} src={profileImage} />
         </div>
-      </div>
+      </StyledInner>
     </div>
   );
 };
