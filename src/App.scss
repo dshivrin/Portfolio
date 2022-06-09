@@ -17,27 +17,22 @@
 }
 
 //find a better default font for the page
-body{
+body {
   font-family: "Signika Negative", sans-serif;
   font-weight: 300;
-  color:#ccd6f6;
-  .nav-bar,.footer{
-    color:#ccd6f6;
+  color: #ccd6f6;
+  .nav-bar,
+  .footer {
+    color: #ccd6f6;
     background-color: #0a192f;
   }
 
-  //initializing counters must be in one line, otherwise it breaks, see 
-  // https://stackoverflow.com/questions/23980085/multiple-css-counters-not-working-as-expected
+  .main-container {
+    background-color: #0a192f;
+  }
+
+  //Initializing counters must be in one line, otherwise it breaks.
+  //See https://stackoverflow.com/questions/23980085/multiple-css-counters-not-working-as-expected
   counter-reset: title-counter nav-counter;
   //counter-reset: nav-counter; <=== this breaks the count for that variable
 }
-
-.main-container {
-  background-color: #0a192f;
-}
-
-
-
-
-
-
