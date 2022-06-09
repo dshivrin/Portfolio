@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../StyledComponents/Container";
 import Title from "../Title/Title";
+import SkillsList from "./SkillsList";
 const profileImage = require("../../Media/profile picture.jpg");
 
 
@@ -14,11 +15,15 @@ const InnerStyle = {
   gap: "25px"
 };
 
-const skills = {
+const skillsStyle = {
   display: "flex",
   alignContent: "center",
   justifyContent: "space-evenly"
 }
+
+const FrontEndSkills = ["Angular (JS/2+)","React", "JQuery"];
+const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
+const DBSkills = ["SQL", "MongoDB"];
 
 const AboutMe = () => {
   return (
@@ -45,21 +50,10 @@ const AboutMe = () => {
               bart asian.
             </p>
             <br/>
-            <div style={skills}>
-              <ul className="front-end">
-                <li>Angular (JS/2+)</li>
-                <li>React</li>
-                <li>JQuery</li>
-              </ul>
-              <ul className="back-end">
-                <li>ASP.NET</li>
-                <li>.NET core</li>
-                <li>Node.js</li>
-              </ul>
-              <ul className="back-end">
-                <li>SQL</li>
-                <li>MongoDB</li>
-              </ul>
+            <div style={skillsStyle}>
+              <SkillsList skills={FrontEndSkills}/>
+              <SkillsList skills={BackEndSkills}/>
+              <SkillsList skills={DBSkills}/>
             </div>
           </div>
         </div>
