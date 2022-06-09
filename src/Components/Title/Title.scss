@@ -1,12 +1,12 @@
-body {
-  counter-reset: count;
-}
+
 
 .section-title{
   margin-bottom: 10px;
 }
 
+//todo: find some font for the numbers
 .section-title::before {
-  counter-increment: count;
-  content: "0" counter(count) ". ";
+  counter-increment: title-counter;
+  content: "0" counter(title-counter) ". ";
+  color: #64ffda;
 }

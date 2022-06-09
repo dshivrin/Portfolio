@@ -1,4 +1,5 @@
 import "./Navigation.scss";
+import NavItem from "./NavItem/NavItem";
 
 const Navigation = () => {
   return (
@@ -7,12 +8,9 @@ const Navigation = () => {
         <a href="#intro">logo</a>
       </span>
       <div className="navigation">
-        <span className="">
-          <a href="#experience">Experience</a>
-        </span>
-        <span className="">
-          <a href="#contact">Contact</a>
-        </span>
+        <NavItem href="#about" text="About"/>
+        <NavItem href="#experience" text="Experience"/>
+        <NavItem href="#contact" text="Contact"/>
       </div>
     </div>
   );

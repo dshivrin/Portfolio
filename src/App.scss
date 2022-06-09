@@ -20,10 +20,23 @@
 body{
   font-family: "Signika Negative", sans-serif;
   font-weight: 300;
+  color:#ccd6f6;
+  .nav-bar,.footer{
+    color:#ccd6f6;
+    background-color: #0a192f;
+  }
+
+  //initialize counters
+  counter-reset: title-counter;
+  counter-reset: nav-counter;
+}
+
+body {
+ 
 }
 
 .main-container {
-  background-color: rgb(50, 125, 200, 0.8);
+  background-color: #0a192f;
 }
 
 

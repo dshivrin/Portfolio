@@ -1,0 +1,5 @@
+.nav-item::before {
+  counter-increment: nav-counter;
+  content: "0" counter(nav-counter) ". ";
+  color: #64ffda;
+}

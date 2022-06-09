@@ -1,10 +1,7 @@
 //The purpose of this component is to have a CSS counter for all the section titles in the app
+//All counters are initialized in App.scss under body tag
+import { TitleProps } from "../../Core/Interfaces";
 import "./Title.scss";
-
-interface TitleProps {
-  text: string;
-  style?: object | {};
-}
 
 const Title = (props: TitleProps) => {
   return (
