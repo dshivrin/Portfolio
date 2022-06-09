@@ -1,0 +1,8 @@
+body {
+  counter-reset: count;
+}
+
+.section-title::before {
+  counter-increment: count;
+  content: "0" counter(count) ". ";
+}

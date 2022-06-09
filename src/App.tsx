@@ -17,7 +17,7 @@ function App() {
       <div className="main-container">
         <Intro />
         <AboutMe />
-        <Education />
+        {/* <Education /> */}
         <Experience />
         <Projects />
         <Hobbies />

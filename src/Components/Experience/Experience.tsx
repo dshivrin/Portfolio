@@ -1,3 +1,4 @@
+import Title from "../Title/Title";
 import { Container } from "./../StyledComponents/Container";
 
 const containerStyles = {
@@ -24,7 +25,7 @@ const OnTitleClick = (event: any) => {
 const Experience = () => {
   return (
     <Container id="experience">
-      <h1 className="title">Work experience:</h1>
+      <Title text="Work experience"/>
       <div style={containerStyles}>
         <div className="tabs-container">
           <ul>

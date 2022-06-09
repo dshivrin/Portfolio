@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../StyledComponents/Container";
+import Title from "../Title/Title";
 const profileImage = require("../../Media/profile picture.jpg");
 
 
@@ -24,7 +25,7 @@ const AboutMe = () => {
    //THIS DESIGN IS NOT RESPONSIVE!! NEED TO FIX
 
     <div style={ContainerStyle}>
-      <h1 className="title">ABOUT ME</h1>
+      <Title text="About Me"/>
       <div style={InnerStyle}>
         <div>
           <p>
