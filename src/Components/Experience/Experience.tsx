@@ -22,7 +22,6 @@ const innerStyles = {
 //For some reason VS code claims 'event' es depricated, so I have to
 const OnTitleClick = (event: any) => {
   const paragraphs = document.querySelectorAll<HTMLElement>('[id^="section-"]');
-  console.log(paragraphs);
   const selectedSectionId = event.target.id;
   //loop throught and hide/show accordingly:
   paragraphs.forEach((p) => {
