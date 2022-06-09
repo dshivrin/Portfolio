@@ -1,11 +1,11 @@
 import { NavItemProps } from "../../../Core/Interfaces";
-import "./NavItem.scss";
+import { StyledNavItem } from "../../StyledComponents/NavItem";
 
 const NavItem = (props: NavItemProps) => {
   return (
-    <span className="nav-item">
+    <StyledNavItem>
       <a href={props.href}>{props.text}</a>
-    </span>
+    </StyledNavItem>
   );
 };
 
