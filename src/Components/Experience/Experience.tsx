@@ -1,7 +1,16 @@
 import Title from "../Title/Title";
 import { Container } from "./../StyledComponents/Container";
+import styled from "styled-components";
 
-const containerStyles = {
+
+
+const ExperienceContainer = styled(Container)`
+  max-width: 900px;
+  text-align: left;
+  margin: 0 auto;
+`;
+
+const innerStyles = {
   display: "flex",
   alignContent: "center",
   justifyContent: "space-evenly",
@@ -24,9 +33,9 @@ const OnTitleClick = (event: any) => {
 
 const Experience = () => {
   return (
-    <Container id="experience">
-      <Title text="Work experience"/>
-      <div style={containerStyles}>
+    <ExperienceContainer id="experience">
+      <Title text="Work experience" />
+      <div style={innerStyles}>
         <div className="tabs-container">
           <ul>
             <li>
@@ -99,7 +108,7 @@ const Experience = () => {
           </p>
         </div>
       </div>
-    </Container>
+    </ExperienceContainer>
   );
 };
 

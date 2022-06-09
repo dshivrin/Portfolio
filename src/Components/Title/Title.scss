@@ -2,6 +2,10 @@ body {
   counter-reset: count;
 }
 
+.section-title{
+  margin-bottom: 10px;
+}
+
 .section-title::before {
   counter-increment: count;
   content: "0" counter(count) ". ";
