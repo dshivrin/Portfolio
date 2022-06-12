@@ -1,4 +1,4 @@
-import { NavItemProps } from "../../../Core/Interfaces";
+import { NavItemProps } from "../../../Core/types";
 import { StyledNavItem } from "../../StyledComponents/NavItem";
 
 const NavItem = (props: NavItemProps) => {

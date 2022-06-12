@@ -1,4 +1,4 @@
-import { SkillsListProps } from "../../Core/Interfaces";
+import { SkillsListProps } from "../../Core/types";
 import { StyledList } from "../StyledComponents/List";
 
 const SkillsList = (props: SkillsListProps) => {
