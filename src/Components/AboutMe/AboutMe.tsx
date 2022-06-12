@@ -1,19 +1,13 @@
-import styled from "styled-components";
-import { Container } from "../StyledComponents/Container";
 import { StyledInner } from "../StyledComponents/InnerContainer";
 import Title from "../Title/Title";
 import SkillsList from "./SkillsList";
 const profileImage = require("../../Media/profile picture.jpg");
 
+//todo: make one component with that style
 const ContainerStyle = {
   maxWidth: "900px",
   margin: "0 auto",
 };
-
-// const InnerStyle = {
-//   display: "flex",
-//   gap: "25px",
-// };
 
 const skillsStyle = {
   display: "flex",
@@ -22,15 +16,12 @@ const skillsStyle = {
 };
 
 
-
 const FrontEndSkills = ["Angular (JS/2+)", "React", "JQuery"];
 const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
 const DBSkills = ["SQL", "MongoDB"];
 
 const AboutMe = () => {
   return (
-    //THIS DESIGN IS NOT RESPONSIVE!! NEED TO FIX
-
     <div style={ContainerStyle}>
       <Title text="About Me" />
       <StyledInner>
