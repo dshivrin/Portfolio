@@ -21,7 +21,7 @@ button.tab {
     background-color: #233554;
     color: var(--light-green);
     border-color: var(--font-color);
-    opacity: 1;
+    opacity: 0.8;
   }
 
   &.active{
@@ -29,6 +29,6 @@ button.tab {
     border-color: var(--light-green);
     background-color: #233554;
     color: var(--light-green);
-    opacity: 1;
+    opacity: 0.9;
   }
 }
