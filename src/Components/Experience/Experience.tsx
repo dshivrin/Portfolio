@@ -1,12 +1,13 @@
 import Title from "../Title/Title";
 import { Container } from "./../StyledComponents/Container";
 import styled from "styled-components";
-import Tabs from "./Switchable/Tabs";
+
 import { useState, useEffect } from "react";
 //TODO: build a dedicated hook to fetch data from json file
 import data from "../../Data/data.json";
 import ExperienceContent from "./Switchable/ExperienceContent";
 import { Workplace } from "../../Core/types";
+import Tabs from "./Switchable/Tabs/Tabs";
 
 const ExperienceContainer = styled(Container)`
   max-width: 900px;

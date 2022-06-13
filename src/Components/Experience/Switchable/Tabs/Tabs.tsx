@@ -1,4 +1,5 @@
-import { ExperienceTabsProps } from "../../../Core/types";
+
+import { ExperienceTabsProps } from 'Core/types';
 import './Tabs.scss';
 
 const Tabs = (props: ExperienceTabsProps) => {

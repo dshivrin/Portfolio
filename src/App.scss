@@ -30,18 +30,18 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: var(--font-color);
-
+  .nav-bar,
+  .main-container,
+  .footer {
+    background-color: var(--background-color);
+  }
   //Initializing counters must be in one line, otherwise it breaks.
   //See https://stackoverflow.com/questions/23980085/multiple-css-counters-not-working-as-expected
   counter-reset: title-counter nav-counter;
   //counter-reset: nav-counter; <=== this breaks the count for that variable
 }
 
-.nav-bar,
-.main-container,
-.footer {
-  background-color: var(--background-color);
-}
+
 
 button {
   cursor: pointer;
