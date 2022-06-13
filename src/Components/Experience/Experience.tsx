@@ -23,12 +23,10 @@ const innerStyles = {
   margin: "0 auto",
 };
 
-
 const Experience = () => {
-  
   const initialData = data.workPlaces as Array<Workplace>;
-  const selectedWP = initialData.find((w) => w.selected);
 
+  const selectedWP = initialData.find((w) => w.selected);
   const [workplaces, setWorkplaces] = useState(initialData);
   const [selectedWorkPlace, setSelectedWorkPlace] = useState(selectedWP);
 
@@ -37,9 +35,20 @@ const Experience = () => {
   const OnTitleClick = (event: any): void => {
     const selectedSectionId = event.target.id;
     const selectedWP = workplaces.find((w) => w.id == selectedSectionId);
-    if(!selectedWP)
+    if (!selectedWP) {
       console.log("something went terribly wrong: ", selectedSectionId);
+      return;
+    }
+    const newState = workplaces.map((wp) => {
+      if (wp.id != +selectedSectionId) wp.selected = false;
+      else wp.selected = true;
+      return wp;
+    });
+
     setSelectedWorkPlace(selectedWP);
+    setWorkplaces(newState);
+    console.log("newState");
+    console.table(newState);
   };
 
   return (
@@ -47,7 +56,7 @@ const Experience = () => {
       <Title text="Work experience" />
       <div style={innerStyles}>
         <Tabs tabs={workplaces} OnClick={OnTitleClick} />
-        <ExperienceContent selectedWorkplace={selectedWorkPlace}/>
+        <ExperienceContent selectedWorkplace={selectedWorkPlace} />
       </div>
     </ExperienceContainer>
   );

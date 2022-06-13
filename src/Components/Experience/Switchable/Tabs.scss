@@ -1,0 +1,35 @@
+button {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0px;
+}
+
+button.tab {
+  padding: 15px 10px;
+  background-color: inherit;
+  color: var(--font-color);
+  opacity: 0.5;
+  font-size: 1em;
+  font-weight: 200;
+  border-left: 2px solid var(--font-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &:hover{
+    background-color: #233554;
+    color: var(--light-green);
+    border-color: var(--font-color);
+    opacity: 0.9;
+  }
+
+  &.active{
+    border-left: 2px solid;
+    border-color: var(--light-green);
+    background-color: #233554;
+    color: var(--light-green);
+    opacity: 1;
+    //opacity: 0.9;
+  }
+}

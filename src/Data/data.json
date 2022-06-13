@@ -1,7 +1,7 @@
 {
   "workPlaces": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Niloosoft",
       "position": "Junior Full-Stack developer.",
       "dates": "Feb 2020 - May 2022",
@@ -9,7 +9,7 @@
       "selected": true
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Sagramatha",
       "position": "MEAN Stack developer.",
       "dates": "March 2018 - August 2018",
@@ -17,7 +17,7 @@
       "selected": false
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Aeronautics",
       "position": "C# Software developer.",
       "dates": "August 2018 - Jan 2020",
@@ -25,7 +25,7 @@
       "selected": false
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Smoove",
       "position": "Junior Full-Stack developer",
       "dates": "Feb 2020 - May 2022",
@@ -33,7 +33,7 @@
       "selected": false
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Prior Experience",
       "position": "",
       "dates": "Apr 2010 - Aug 2014",

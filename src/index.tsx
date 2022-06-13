@@ -7,10 +7,13 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+//React.StrictMode makes the app load twice in dev mode. Restore before production
 root.render(
-  <React.StrictMode>
-   <App/>
-  </React.StrictMode>
+  // <React.StrictMode>
+  //  <App/>
+  // </React.StrictMode>
+  <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function
