@@ -1,7 +1,6 @@
 import Title from "../Title/Title";
 import { Container } from "./../StyledComponents/Container";
 import styled from "styled-components";
-
 import { useState, useEffect } from "react";
 //TODO: build a dedicated hook to fetch data from json file
 import data from "../../Data/data.json";
@@ -36,10 +35,7 @@ const Experience = () => {
   const OnTitleClick = (event: any): void => {
     const selectedSectionId = event.target.id;
     const selectedWP = workplaces.find((w) => w.id == selectedSectionId);
-    if (!selectedWP) {
-      console.log("something went terribly wrong: ", selectedSectionId);
-      return;
-    }
+
     const newState = workplaces.map((wp) => {
       if (wp.id != +selectedSectionId) wp.selected = false;
       else wp.selected = true;
@@ -48,8 +44,6 @@ const Experience = () => {
 
     setSelectedWorkPlace(selectedWP);
     setWorkplaces(newState);
-    console.log("newState");
-    console.table(newState);
   };
 
   return (

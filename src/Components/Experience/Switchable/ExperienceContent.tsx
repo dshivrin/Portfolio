@@ -1,15 +1,18 @@
-import { ExperienceContentProps } from "../../../Core/types";
+import { ExperienceContentProps, Workplace } from "Core/types";
+import DateRange from "./Date-range/Date-range";
+import Position from "./Position/Position";
 
 //todo: investigate why the type returns undefined sometimes
 const ExperienceContent = (props: any) => {
-  const workplace = props.selectedWorkplace;
+  const workplace = props.selectedWorkplace as Workplace;
+  console.log(workplace);
   return (
-    <div className="content-container">
-      <p id={workplace.name}>
-        <span className="job-title">{workplace.position}</span>{" "}
-        {workplace.description}
-        <span>{workplace.dates}</span>
-      </p>
+    <div id={workplace.name} className="content-container">
+      <Position workplace={workplace} />
+      <br />
+      <p>{workplace.description}</p>
+      <br />
+      <DateRange workplace={workplace} />
     </div>
   );
 };

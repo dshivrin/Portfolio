@@ -25,8 +25,9 @@ export type Workplace = WorkplaceSlim & {
   position: string;
   dates: string;
   description: string;
+  bullets: string[];
+  website: string;
 }
-
 
 export type ExperienceTabsProps = {
   tabs: Workplace[];
@@ -37,3 +38,12 @@ export type ExperienceTabsProps = {
 export type ExperienceContentProps =  {
   selectedWorkplace: Workplace;
 }
+
+export type PositionProps = {
+  workplace: Workplace
+}
+
+export type ExperienceProps = {
+  workplace: Workplace
+}
+

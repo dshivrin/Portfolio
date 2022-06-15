@@ -3,25 +3,31 @@
     {
       "id": 0,
       "name": "Niloosoft",
-      "position": "Junior Full-Stack developer.",
+      "position": "Junior Full-Stack developer",
       "dates": "Feb 2020 - May 2022",
       "description": "The journey begins! Specialized on .NET framework, microservices architechture and MSSQL on the back-end. Used AngularJS and Angular 2, JQuery, Material UI on the front-end. Developed event driven applications in the Human Resources wold.",
+      "bullets":[],
+      "website": "https://www.niloosoft.com/?lang=en",
       "selected": true
     },
     {
       "id": 1,
-      "name": "Sagramatha",
-      "position": "MEAN Stack developer.",
+      "name": "Sagarmatha",
+      "position": "MEAN Stack developer",
       "dates": "March 2018 - August 2018",
-      "description": "I gladlytook the opportunity to go all-in with JavaScript! Node.js, express.js, Angular 2+, MongoDB and MSSQL. With this well established big-data company I was developing a coupons managment system for large retailers mainly in the U.S.",
+      "description": "I gladlytook the opportunity to go all-in with JavaScript with an very interesting Big Data company! Node.js, express.js, Angular 2+, MongoDB and MSSQL. With this well established big-data company I was developing a coupons managment system for large retailers mainly in the U.S.",
+      "bullets":[],
+      "website": "https://www.sag121.com/",
       "selected": false
     },
     {
       "id": 2,
       "name": "Aeronautics",
-      "position": "C# Software developer.",
+      "position": "C# Software developer",
       "dates": "August 2018 - Jan 2020",
       "description": "I took a chalange outside of web-development world with a defence contractor. Maintained an AngularJS generator application and took part in developing the company's next flight simulator.",
+      "bullets":[],
+      "website": "https://aeronautics-sys.com/",
       "selected": false
     },
     {
@@ -30,6 +36,8 @@
       "position": "Junior Full-Stack developer",
       "dates": "Feb 2020 - May 2022",
       "description": "Moved to my next challange and joined an amazing company in the Marketing and Automation world. This time mastering ReactJS, and",
+      "bullets":[],
+      "website": "https://www.smoove.io/",
       "selected": false
     },
     {
@@ -38,6 +46,8 @@
       "position": "",
       "dates": "Apr 2010 - Aug 2014",
       "description": " Prior to software development I was the best tech support engineer you can find. I have worked in local ISP support center, soon to become a senior support engineer, then shift manager and evetually tech support team lead. <br/>  As a result I have a wide understanding of networking, routing and managment skills.",
+      "bullets":[],
+      "website": "https://www.smoove.io/",
       "selected": false
     }
   ]
