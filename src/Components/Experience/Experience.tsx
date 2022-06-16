@@ -22,7 +22,7 @@ const innerStyles = {
   gap: "25px",
   margin: "0 auto",
 };
-
+//todo: mobile version
 const Experience = () => {
   const initialData = data.workPlaces as Array<Workplace>;
 
