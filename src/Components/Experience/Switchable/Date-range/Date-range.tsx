@@ -1,12 +1,15 @@
-import { ExperienceProps } from "Core/types";
+import { DateRangeProps } from "Core/types";
+import moment from 'moment'
 
-//todo: change to actual dates 
-const DateRange = (props: ExperienceProps) =>{
-const {workplace} = props;
+const DateRange = (props: DateRangeProps) =>{
+const {from, to, format} = props;
+
+const start = moment(from).format(format);
+const end = moment(to).format(format);
 
     return (
         <div>
-            <span>{workplace.dates}</span>
+            <span>{start} - {end}</span>
         </div>
     );
 }

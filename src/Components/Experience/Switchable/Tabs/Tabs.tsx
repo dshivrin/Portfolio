@@ -3,9 +3,7 @@ import { ExperienceTabsProps } from 'Core/types';
 import './Tabs.scss';
 
 const Tabs = (props: ExperienceTabsProps) => {
-  
   const tabs = props.tabs;
-  
   return (
     <div className="tabs-container">
       <ul>
@@ -18,7 +16,7 @@ const Tabs = (props: ExperienceTabsProps) => {
               onClick={props.OnClick}
               className={wp.selected ? "tab active" : "tab"}
             >
-              {wp.name}
+              {wp.title}
             </button>
           );
         })}

@@ -5,14 +5,13 @@ import Position from "./Position/Position";
 //todo: investigate why the type returns undefined sometimes
 const ExperienceContent = (props: any) => {
   const workplace = props.selectedWorkplace as Workplace;
-  console.log(workplace);
   return (
     <div id={workplace.name} className="content-container">
       <Position workplace={workplace} />
       <br />
       <p>{workplace.description}</p>
       <br />
-      <DateRange workplace={workplace} />
+      <DateRange from={workplace.from} to={workplace.to} format="MMM YYYY" />
     </div>
   );
 };

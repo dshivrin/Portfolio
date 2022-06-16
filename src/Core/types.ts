@@ -1,5 +1,7 @@
 //TODO: cleanup the types
 
+import moment from "moment";
+
 export type NavItemProps = {
   text: string;
   href: string;
@@ -18,12 +20,14 @@ export type SkillsListProps =  {
 export type WorkplaceSlim = {
   id: number;
   name: string;
+  title: string;
   selected: boolean;
 }
 
 export type Workplace = WorkplaceSlim & {
   position: string;
-  dates: string;
+  from: string;
+  to: string;
   description: string;
   bullets: string[];
   website: string;
@@ -47,3 +51,8 @@ export type ExperienceProps = {
   workplace: Workplace
 }
 
+export type DateRangeProps = {
+  from: string | Date;
+  to?: string | Date;//null = current year. moment(null) = moment() = current date
+  format: string;
+}
