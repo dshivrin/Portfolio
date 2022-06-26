@@ -22,7 +22,7 @@ const DBSkills = ["SQL", "MongoDB"];
 
 const AboutMe = () => {
   return (
-    <div style={ContainerStyle}>
+    <div id="about" style={ContainerStyle}>
       <Title text="About Me" />
       <StyledInner>
         <div>
