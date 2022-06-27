@@ -12,7 +12,6 @@ const getBorderRadius = (shape: string) => {
 
 
 const Cell = (props: any) => {
-
   const [size, setWidth] = useState(props.size);
   const [bgColor, setBgColor] = useState(props.isAlive ? "#570505" : "#908f8f");
   const [cellShape, setCellShape] = useState(getBorderRadius(props.shape));

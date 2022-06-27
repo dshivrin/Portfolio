@@ -56,3 +56,5 @@ export type DateRangeProps = {
   to?: string | Date;//null = current year. moment(null) = moment() = current date
   format: string;
 }
+
+export type Matrix = Array<Array<number>>;
