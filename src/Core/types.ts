@@ -57,4 +57,4 @@ export type DateRangeProps = {
   format: string;
 }
 
-export type Matrix = Array<Array<number>>;
+export type Matrix = Array<Array<boolean>>;

@@ -15,8 +15,8 @@ const skillsStyle = {
 //I will clac the next life state into the second arrays and then use it to update the canvas
 const Init = () => {};
 
-function getRandomBool(): number {
-  return Math.random() > 0.5 ? 1 : 0;
+function getRandomBool(): boolean {
+  return Math.random() > 0.5 ? true : false;
 }
 
 const fillRandomValues = (rows: number, columns: number) => {
@@ -27,7 +27,7 @@ const fillRandomValues = (rows: number, columns: number) => {
 
 const getEmptyGrid = (rows: number, columns: number) => {
   return Array.from({ length: rows }, () =>
-    Array.from({ length: columns }, () => 0)
+    Array.from({ length: columns }, () => false)
   );
 };
 
@@ -49,7 +49,7 @@ const sumNeighbors = (board: Matrix, x: number, y: number) => {
     }
     //result += board[ny][nx]; // <== this is because the first select on the array is on the Y axis aka board[nx] = a row
     try {
-      result += board[nx][ny];
+      result += +board[nx][ny];
     } catch (ex) {
       debugger;
     }
@@ -97,9 +97,11 @@ const sumNeighborsBin = (board: Matrix, x: number, y: number) => {
 };
 
 //TODO: create type for props
+//todo: improve the updateLifeCycle method
 const Canvas = (props: any) => {
-  const [rows, setRows] = useState(5);
-  const [columns, setColumns] = useState(5);
+
+  const [rows, setRows] = useState(50);
+  const [columns, setColumns] = useState(50);
   let grid = fillRandomValues(rows, columns);
   const [board, setBoard] = useState(grid);
   //useEffect for start the game loop
@@ -113,15 +115,14 @@ const Canvas = (props: any) => {
     const mark1 = "i iteration";
     const mark2 = "i iteretion finished";
     const mark3 = "mark_finish";
-    console.log("old state:");
-    console.dir(board);
+   
     performance.mark(markStart);
     const width = board.length;
     const height = board[0].length;
     let newState = getEmptyGrid(width, height); //creating an empty grig that will hold the new state
 
     for (let i = 0; i < board.length; i++) {
-      performance.mark(mark1);
+      //performance.mark(mark1);
       for (let j = 0; j < board[i].length; j++) {
         const isAlive = board[i][j];
         const livingNeighbors = sumNeighbors(board, i, j);
@@ -129,7 +130,7 @@ const Canvas = (props: any) => {
         //console.log("livingNeighbors: ", livingNeighbors);
         //Any live cell with fewer than two live neighbours dies, as if by underpopulation.
         if (isAlive && livingNeighbors < 2) {
-          newState[i][j] = 0;
+          newState[i][j] = false;
           continue;
         }
         //Any live cell with two or three live neighbours lives on to the next generation.
@@ -138,26 +139,24 @@ const Canvas = (props: any) => {
         }
         //Any live cell with more than three live neighbours dies, as if by overpopulation.
         if (isAlive && livingNeighbors > 3) {
-          newState[i][j] = 0;
+          newState[i][j] = false;
           continue;
         }
         //Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
         if (!isAlive && livingNeighbors === 3) {
-          newState[i][j] = 1;
+          newState[i][j] = true;
           continue;
         }
-        newState[i][j] = 1; //cell survives
+        newState[i][j] = true; //cell survives
       }
-      performance.mark(mark2);
+      //performance.mark(mark2);
     }
     performance.mark(mark3);
-    setBoard([...newState]);
-    console.log("new state:");
-    console.log();
+    setBoard(newState);
 
-    performance.measure("measure from start to 1", markStart, mark3);
-    performance.measure("measure from 1 to 2", mark1, mark2);
-    //console.log(performance.getEntriesByType("measure"));
+    performance.measure("measure from start to end", markStart, mark3);
+    //performance.measure("measure from 1 to 2", mark1, mark2);
+    console.log(performance.getEntriesByType("measure"));
   };
 
   //todo: dynamic canvas
