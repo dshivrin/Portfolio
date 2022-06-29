@@ -5,6 +5,7 @@ export const StyledInner = styled.div`
 display: flex;
 flex-direction: row;
 gap: 25px;
+justify-content: center;
 @media (max-width: 768px) {
   flex-direction: column;
   padding: 0 20px;
