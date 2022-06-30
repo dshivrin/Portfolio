@@ -1,7 +1,7 @@
 {
   "workPlaces": [
     {
-      "id": 0,
+      "id": 4,
       "name": "Niloosoft ltd",
       "title":"Niloosoft",
       "position": "Junior Full-Stack developer",
@@ -10,16 +10,16 @@
       "description": "The journey begins! Specialized on .NET framework, microservices architechture and MSSQL on the back-end. Used AngularJS and Angular 2, JQuery, Material UI on the front-end. Developed event driven applications in the Human Resources wold.",
       "bullets":[],
       "website": "https://www.niloosoft.com/?lang=en",
-      "selected": true
+      "selected": false
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Sagarmatha",
       "title":"Sagarmatha",
       "position": "MEAN Stack developer",
       "from": "March 2018", 
       "to": "August 2018",
-      "description": "I gladlytook the opportunity to go all-in with JavaScript with an very interesting Big Data company! Node.js, express.js, Angular 2+, MongoDB and MSSQL. With this well established big-data company I was developing a coupons managment system for large retailers mainly in the U.S.",
+      "description": "I gladly took the opportunity to go all-in with JavaScript with an very interesting Big Data company! Node.js, express.js, Angular 2+, MongoDB and MSSQL. With this well established big-data company I was developing a coupons managment system for large retailers mainly in the U.S.",
       "bullets":[],
       "website": "https://www.sag121.com/",
       "selected": false
@@ -38,7 +38,7 @@
       "selected": false
     },
     {
-      "id": 3,
+      "id": 1,
       "name": "Smoove",
       "title":"Smoove",
       "position": "Senior Full-Stack developer",
@@ -47,10 +47,10 @@
       "description": "Moved to my next challange and joined an amazing company in the Marketing and Automation world. This time mastering ReactJS, and",
       "bullets":[],
       "website": "https://www.smoove.io/",
-      "selected": false
+      "selected": true
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Orange",
       "title":"Prior Experience",
       "position": "Tech Suppurt",

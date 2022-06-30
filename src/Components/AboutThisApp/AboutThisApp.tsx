@@ -1,22 +1,17 @@
-
 import { Container } from "../StyledComponents/Container";
 import Title from "../Title/Title";
 
-
 //Logos are taken from https://www.freepnglogos.com/
-const AboutThisApp = () =>{
+const AboutThisApp = () => {
   return (
     <Container>
-      <Title text={"About This App"}/>
+      <Title text={"About This App"} />
       <p className="contact">
-          This potfolio project was written in React v18.1.0 
-          Using Typescript and SCSS
-      </p>
-      <p>
-          
+        This potfolio project was written in React v18.1.0 Using Typescript and
+        SCSS
       </p>
     </Container>
   );
-}
+};
 
 export default AboutThisApp;

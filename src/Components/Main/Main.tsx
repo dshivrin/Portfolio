@@ -13,10 +13,9 @@ const Main = () => {
     <div className="main-container">
       <Intro />
       <AboutMe />
-      {/* <Education /> */}
       <Experience />
-      <Projects />
-      <Hobbies />
+      {/* <Projects />
+      <Hobbies /> */}
       <Contact />
       <AboutThisApp />
       <Footer />

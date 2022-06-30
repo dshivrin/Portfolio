@@ -1,4 +1,5 @@
 //This font is very similar to VS code's font I use, so I like it :)
+//used in the titles numerators
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=League+Script&display=swap');
 
 //To be replaced, the font for my name
@@ -9,7 +10,7 @@
 }
 
 //Global variables: (can also be defined using :root{})
-html {
+* {
   --light-green: rgb(100, 255, 218);
   --background-color: rgb(10, 25, 47);
   --font-color: rgb(204, 214, 246);//#0a192f

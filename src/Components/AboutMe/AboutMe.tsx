@@ -15,7 +15,6 @@ const skillsStyle = {
   justifyContent: "space-evenly",
 };
 
-
 const FrontEndSkills = ["Angular (JS/2+)", "React", "JQuery"];
 const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
 const DBSkills = ["SQL", "MongoDB"];
@@ -34,14 +33,44 @@ const AboutMe = () => {
           <br />
           <div>
             <p>
-              Gag ipsum dolar sit amet woman puking rainbows phone vegan haters
-              gonna hate. Humor portfolio ba dumm tss oh stop it, you so close
-              cereal guy drink sandwich. I See What You Did There cookie monster
-              viverra oh god why hitler food no bad dead space people. Ipsum
-              iron man female not okay 9000 for rainbow mother of god. High
-              school elephant i dont get it college derp joke fap fap genius
-              bart asian.
+              In my journey I had an amazing experience working with small,
+              meduim and large companies, using variety of tools. I started at a
+              small company that provides{" "}
+              <a
+                className="company-url"
+                target="blank"
+                href="https://www.niloosoft.com/?lang=en"
+              >
+                the most effective HR solutions
+              </a>
+              , then dived into a{" "}
+              <a
+                className="company-url"
+                target="blank"
+                href="https://www.sag121.com/"
+              >
+                big data company
+              </a>
+              ,{" "}
+              <a
+                className="company-url"
+                target="blank"
+                href="https://aeronautics-sys.com/"
+              >
+                a security contracter
+              </a>{" "}
+              and a
+              <a
+                className="company-url"
+                target="blank"
+                href="https://www.smoove.io/"
+              >
+                marketing automation company
+              </a>
+              .
             </p>
+            <br />
+            <p>Here are the main technologies I’ve been working with:</p>
             <br />
             <div style={skillsStyle}>
               <SkillsList skills={FrontEndSkills} />

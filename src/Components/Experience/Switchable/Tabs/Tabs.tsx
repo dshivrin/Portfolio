@@ -3,7 +3,7 @@ import { ExperienceTabsProps } from 'Core/types';
 import './Tabs.scss';
 
 const Tabs = (props: ExperienceTabsProps) => {
-  const tabs = props.tabs;
+  const tabs = props.tabs.sort((a,b) => {return a.id - b.id});
   return (
     <div className="tabs-container">
       <ul>

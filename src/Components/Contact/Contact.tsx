@@ -62,19 +62,19 @@ const Contact = () => {
         <a
           target="blank"
           href="mailto:dshivrin@gmail.com?subject=Hello World!"
-          className="email"
+          className="contact-url email"
           style={{ backgroundImage: `url(${gmailLogo})` }}
         ></a>
         <a
           target="blank"
           href="https://api.whatsapp.com/send?phone=972544907782"
-          className="whatsapp"
+          className="contact-url whatsapp"
           style={{ backgroundImage: `url(${whatsAppLogo})` }}
         ></a>
         <a
           target="blank"
           href="https://www.linkedin.com/in/dima-shivrin/"
-          className="linkedIn"
+          className="contact-url linkedIn"
           style={{ backgroundImage: `url(${linkedInLogo})` }}
         ></a>
       </div>
