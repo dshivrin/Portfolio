@@ -1,8 +1,11 @@
 import { Container } from "../StyledComponents/Container";
 import { StyledInner } from "../StyledComponents/InnerContainer";
 import Title from "../Title/Title";
+import gmailLogo from "Media/logo-gmail.png";
+import whatsAppLogo from "Media/whatsapp-logo.png";
+import linkedInLogo from "Media/linkedin-logo.png";
 import charachter from "Media/dancing-business-character.jpg";
-import ReactWhatsapp from "react-whatsapp";
+import "./Contact.scss";
 
 // const Slice = () => {
 //   const imgContainer = document.getElementById("image-container");
@@ -39,14 +42,14 @@ const Contact = () => {
   //Slice();
   return (
     <Container id="contact">
-      <h4>So Now What?</h4>
-      <Title text="Say Hello" />
+      <Title text="So Now What?" />
+      <h3>Say Hello</h3>
+      <br />
       <StyledInner>
         <p>
           I'm currently looking for my next challenge! If you have an
           interesting suggestion for me
         </p>
-
         <br />
         <br />
       </StyledInner>
@@ -55,20 +58,26 @@ const Contact = () => {
           <img id="" src={charachter} />
         </div>
       </StyledInner> */}
-      <StyledInner>
+      <div className="links-container">
+        <a
+          target="blank"
+          href="mailto:dshivrin@gmail.com?subject=Hello World!"
+          className="email"
+          style={{ backgroundImage: `url(${gmailLogo})` }}
+        ></a>
         <a
           target="blank"
           href="https://api.whatsapp.com/send?phone=972544907782"
-        >
-          Whatsapp
-        </a>
-        <a target="blank" href="mailto:dshivrin@gmail.com?subject=Hello World!">
-          Email
-        </a>
-        <a target="blank" href="https://www.linkedin.com/in/dima-shivrin/">
-          Linkedin
-        </a>
-      </StyledInner>
+          className="whatsapp"
+          style={{ backgroundImage: `url(${whatsAppLogo})` }}
+        ></a>
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/dima-shivrin/"
+          className="linkedIn"
+          style={{ backgroundImage: `url(${linkedInLogo})` }}
+        ></a>
+      </div>
     </Container>
   );
 };
