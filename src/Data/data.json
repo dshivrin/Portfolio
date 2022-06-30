@@ -1,7 +1,19 @@
 {
   "workPlaces": [
     {
-      "id": 4,
+      "id": 1,
+      "name": "Orange",
+      "title":"Prior Experience",
+      "position": "Tech Suppurt",
+      "from": "Apr 2010", 
+      "to": "Aug 2014",
+      "description": "Prior to software development I was the best tech support engineer you can find. I have worked in local ISP support center, soon to become a senior support engineer, then shift manager and evetually tech support team lead. <br/>  As a result I have a wide understanding of networking, routing and managment skills.",
+      "bullets":[],
+      "website": "https://www.smoove.io/",
+      "selected": false
+    },
+    {
+      "id": 2,
       "name": "Niloosoft ltd",
       "title":"Niloosoft",
       "position": "Junior Full-Stack developer",
@@ -25,7 +37,7 @@
       "selected": false
     },
     {
-      "id": 2,
+      "id": 4,
       "name": "Aeronautics-sys",
       "title":"Aeronautics",
       "position": "C# Software developer",
@@ -38,7 +50,7 @@
       "selected": false
     },
     {
-      "id": 1,
+      "id": 5,
       "name": "Smoove",
       "title":"Smoove",
       "position": "Senior Full-Stack developer",
@@ -48,18 +60,6 @@
       "bullets":[],
       "website": "https://www.smoove.io/",
       "selected": true
-    },
-    {
-      "id": 5,
-      "name": "Orange",
-      "title":"Prior Experience",
-      "position": "Tech Suppurt",
-      "from": "Apr 2010", 
-      "to": "Aug 2014",
-      "description": "Prior to software development I was the best tech support engineer you can find. I have worked in local ISP support center, soon to become a senior support engineer, then shift manager and evetually tech support team lead. <br/>  As a result I have a wide understanding of networking, routing and managment skills.",
-      "bullets":[],
-      "website": "https://www.smoove.io/",
-      "selected": false
     }
   ]
 }
