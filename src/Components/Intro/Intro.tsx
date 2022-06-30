@@ -11,7 +11,9 @@ const Name = styled.h1`
 `;
 
 const Header = styled.div`
-  justify-items: start;
+  //justify-items: start;
+  color: var(--light-green);
+  font-weight: 400;
 `;
 
 const IntroContainer = styled(Container)`
@@ -31,12 +33,11 @@ const Intro = () => {
   return (
     <IntroContainer id="intro">
       <Header>
-        <span>Hi there!</span>
         <br />
-        <span>My name is</span>
+        <span>Hi there! I am</span>
       </Header>
       <Name className="name">Dima Shivrin</Name>
-      <div>I am a Full-Stack web developer</div>
+      <div>I am a senior Full-Stack Engineer</div>
     </IntroContainer>
   );
 };
