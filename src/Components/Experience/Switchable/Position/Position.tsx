@@ -1,11 +1,13 @@
+import ButtonLink from "Components/Shared/ButtonLink/ButtonLink";
 import { PositionProps } from "Core/types";
 
 const Position = (props: PositionProps) => {
   const { workplace } = props;
   return (
-    <h1 className="position">
-      {workplace.position} at <a href={workplace.website}>{workplace.name}</a>
-    </h1>
+    <div style={{display: "flex"}}>
+      <h1 className="position">{workplace.position} at</h1>
+      <ButtonLink {...workplace} />
+    </div>
   );
 };
 

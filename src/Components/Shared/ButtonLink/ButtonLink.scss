@@ -1,0 +1,101 @@
+//Based on annimation created by Panos Christophides
+//https://www.sliderrevolution.com/resources/css-border-animation/#:~:text=CSS%20border%20animation%20is%20useful,container%20element%20a%20unique%20style.
+
+//local variables 
+$width  : 200px;
+$height : 35px;
+$primary_color : #3084AC;
+$border_color--hover : lighten($primary_color, 80);
+$stroke : 2px;
+$border: $stroke solid darken($primary_color,10);
+$transition_duration:100ms;
+$pipeline_width: $width+$stroke;
+$pipeline_height: $height+$stroke;
+$pipes : 4;
+
+@function border-pipeline ($transition_duration, $pipe) {
+    @return $transition_duration*$pipe;
+}
+
+@mixin border-animation($dimension, $easing ,$pipe ) 
+{
+    transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+    -web-kit-transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+}
+
+.box {
+    
+    width: $width ;
+    height: $height ;
+    background: transparent;
+    margin: auto;
+    text-align: center;
+    color: var(--light-green); 
+    position:relative;
+    cursor: pointer;
+    //text::after
+    text-align:left;
+    padding-left: 2px;
+    top:4px;
+    //todo: add h2::after arrow animation 
+    transition: ($transition_duration*$pipes)+$transition_duration ease;
+    &:before {
+        position: absolute; 
+        width: 0; 
+        height:$stroke; 
+        content: ''; 
+        background: var(--font-color);
+        top:-$stroke; 
+        left:-$stroke; 
+        @include border-animation( width, ease, 3);
+    }
+    &:after {
+        position: absolute; 
+        width:$stroke; 
+        height:0;
+        content: ''; 
+        background: var(--font-color);
+        top:-$stroke; 
+        right: -$stroke; 
+        @include border-animation( height, ease, 2);
+    }
+    &-inner:after{
+        position: absolute; 
+        width: 0; 
+        height:$stroke; 
+        content: ''; 
+        background:var(--font-color);
+        bottom:-$stroke; 
+        right: -$stroke;
+        @include border-animation( width, ease, 1);
+    }
+    &-inner:before {
+        position: absolute; 
+        width: $stroke; 
+        height:0;content: ''; 
+        background: var(--font-color);
+        bottom:-$stroke; 
+        left: -$stroke; 
+        @include border-animation( height, ease, 0); 
+    }
+    &:hover{
+        border-color:transparent;
+        //background:darken($primary_color,30);
+        &:before{
+            width: $pipeline_width; 
+            @include border-animation( width, ease, 0); 
+        }
+        &:after {
+            height:$pipeline_height; 
+            @include border-animation( height, ease, 1); 
+        }
+        .box-inner:after {
+            width: $pipeline_width; 
+            @include border-animation( width, ease, 2);
+        }
+        .box-inner:before {
+            height:$pipeline_height; 
+            @include border-animation( height, ease, 3);
+        }
+    }
+}
