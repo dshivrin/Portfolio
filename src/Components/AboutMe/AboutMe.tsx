@@ -35,13 +35,13 @@ const AboutMe = () => {
             <p>
               In my journey I had an amazing experience working with small,
               meduim and large companies, using variety of tools. I started at a
-              small company that provides{" "}
+              small company that provides the most effective{" "}
               <a
                 className="company-url"
                 target="blank"
                 href="https://www.niloosoft.com/?lang=en"
               >
-                the most effective HR solutions
+                 HR solutions
               </a>
               , then dived into a{" "}
               <a
@@ -59,7 +59,7 @@ const AboutMe = () => {
               >
                 a security contracter
               </a>{" "}
-              and a
+              and a{" "}
               <a
                 className="company-url"
                 target="blank"

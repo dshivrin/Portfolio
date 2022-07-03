@@ -45,7 +45,12 @@ body {
   //counter-reset: nav-counter; <=== this breaks the count for that variable
 }
 
-
+a{
+  text-decoration: none;
+  outline: none;
+  color: var(--light-green);
+  cursor: pointer;
+}
 
 button {
   cursor: pointer;
