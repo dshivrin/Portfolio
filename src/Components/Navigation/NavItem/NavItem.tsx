@@ -1,5 +1,5 @@
 import { NavItemProps } from "../../../Core/types";
-import { StyledNavItem } from "../../StyledComponents/NavItem";
+import { StyledNavItem } from "../../Shared/StyledComponents/NavItem";
 
 const NavItem = (props: NavItemProps) => {
   return (

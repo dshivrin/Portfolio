@@ -1,5 +1,5 @@
 import Title from "../Title/Title";
-import { Container } from "./../StyledComponents/Container";
+import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 //TODO: build a dedicated hook to fetch data from json file

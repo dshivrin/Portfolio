@@ -1,5 +1,5 @@
 import { SkillsListProps } from "../../Core/types";
-import { StyledList } from "../StyledComponents/List";
+import { StyledList } from "../Shared/StyledComponents/List";
 
 const SkillsList = (props: SkillsListProps) => {
   return (

@@ -1,5 +1,5 @@
 
-import { Container } from "../StyledComponents/Container";
+import { Container } from "../Shared/StyledComponents/Container";
 
 const Projects = () =>{
   return (

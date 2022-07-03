@@ -1,4 +1,4 @@
-import { Container } from "../StyledComponents/Container";
+import { Container } from "../Shared/StyledComponents/Container";
 import Title from "../Title/Title";
 
 //Logos are taken from https://www.freepnglogos.com/

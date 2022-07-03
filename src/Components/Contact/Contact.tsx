@@ -1,5 +1,5 @@
-import { Container } from "../StyledComponents/Container";
-import { StyledInner } from "../StyledComponents/InnerContainer";
+import { Container } from "../Shared/StyledComponents/Container";
+import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import Title from "../Title/Title";
 import gmailLogo from "Media/logo-gmail.png";
 import whatsAppLogo from "Media/whatsapp-logo.png";

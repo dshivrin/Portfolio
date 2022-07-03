@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../StyledComponents/Container";
+import { Container } from "../Shared/StyledComponents/Container";
 
 const Name = styled.h1`
   font-family: Madelican;

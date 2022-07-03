@@ -1,4 +1,4 @@
-import { StyledInner } from "../StyledComponents/InnerContainer";
+import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import Title from "../Title/Title";
 import SkillsList from "./SkillsList";
 const profileImage = require("../../Media/profile picture.jpg");
