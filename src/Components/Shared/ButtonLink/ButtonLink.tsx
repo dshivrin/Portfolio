@@ -4,7 +4,6 @@ import './ButtonLink.scss';
 const ButtonLink = (props: any) => {
    
   const navigate = (url: string) => {
-    console.log(url);
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
