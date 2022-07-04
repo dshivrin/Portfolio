@@ -16,8 +16,8 @@ const Main = () => {
       <Experience />
       {/* <Projects />
       <Hobbies /> */}
-      <Contact />
       <AboutThisApp />
+      <Contact />
       <Footer />
     </div>
   );
