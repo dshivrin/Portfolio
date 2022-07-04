@@ -65,7 +65,6 @@ const AboutMe = () => {
                 a security contracter
               </a>{" "}
               and a{" "}
-              <br/>
               <a
                 className="link company-url"
                 target="blank"
@@ -73,13 +72,6 @@ const AboutMe = () => {
               >
                 marketing automation company
               </a>
-              {/* <a
-                className="link company-url"
-                target="blank"
-                href="https://www.smoove.io/"
-              >
-                marketing automation company
-              </a> */}
               .
             </p>
             <br />
