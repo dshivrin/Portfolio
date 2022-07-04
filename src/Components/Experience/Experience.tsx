@@ -2,26 +2,11 @@ import Title from "../Title/Title";
 import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-//TODO: build a dedicated hook to fetch data from json file
 import data from "../../Data/data.json";
 import ExperienceContent from "./Switchable/ExperienceContent";
 import { Workplace } from "../../Core/types";
 import Tabs from "./Switchable/Tabs/Tabs";
 
-const ExperienceContainer = styled(Container)`
-  max-width: 900px;
-  text-align: left;
-  margin: 0 auto;
-`;
-
-const innerStyles = {
-  display: "flex",
-  alignContent: "center",
-  justifyContent: "space-evenly",
-  maxWidth: "900px",
-  gap: "25px",
-  margin: "0 auto",
-};
 //todo: mobile version
 const Experience = () => {
   const initialData = data.workPlaces as Array<Workplace>;
@@ -46,9 +31,29 @@ const Experience = () => {
     setWorkplaces(newState);
   };
 
+  const ExperienceContainer = styled(Container)`
+    max-width: 900px;
+    text-align: left;
+    margin: 0 auto;
+  `;
+
+  const innerStyles = {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "space-evenly",
+    maxWidth: "900px",
+    gap: "15px",
+    margin: "0 auto",
+  };
+
+  //to match the gap between the flex items
+  const titleStyle = {
+    marginBottom: "15px",
+  };
+
   return (
     <ExperienceContainer id="experience">
-      <Title text="Work experience" />
+      <Title style={titleStyle} text="Work experience" />
       <div style={innerStyles}>
         <Tabs tabs={workplaces} OnClick={OnTitleClick} />
         <ExperienceContent selectedWorkplace={selectedWorkPlace} />

@@ -5,6 +5,7 @@ import gmailLogo from "Media/logo-gmail.png";
 import whatsAppLogo from "Media/whatsapp-logo.png";
 import linkedInLogo from "Media/linkedin-logo.png";
 import configData from "Data/configs.json";
+import styled from "styled-components";
 import "./Contact.scss";
 
 // const Slice = () => {
@@ -36,7 +37,12 @@ import "./Contact.scss";
 //   create();
 // };
 
-//TODO: use icons for each contact option
+const ContactContainer = styled(Container)`
+  max-width: 900px;
+  height: auto;//overides 10vh/ todo: investigate
+  margin: 0 auto;
+`;
+
 const Contact = () => {
   const contactInfo = configData.CONTACT_INFO;
   const externalUrls = configData.EXTERNAL_URLS;
@@ -47,7 +53,7 @@ const Contact = () => {
 
   //Slice();
   return (
-    <Container id="contact">
+    <ContactContainer id="contact">
       <Title text="So Now What?" />
       <h3>Say Hello</h3>
       <br />
@@ -80,7 +86,7 @@ const Contact = () => {
           style={{ backgroundImage: `url(${linkedInLogo})` }}
         ></a>
       </div>
-    </Container>
+    </ContactContainer>
   );
 };
 

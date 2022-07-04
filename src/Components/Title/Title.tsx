@@ -4,9 +4,11 @@ import { TitleProps } from "Core/types";
 import "./Title.scss";
 
 const Title = (props: TitleProps) => {
+  const { text, style } = props;
+
   return (
-    <h1 className="section-title" >
-      {props.text}
+    <h1 style={style} className="section-title">
+      {text}
     </h1>
   );
 };
