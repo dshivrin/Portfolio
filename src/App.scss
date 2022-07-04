@@ -50,7 +50,7 @@ a.link{
   position: relative;
   text-decoration: none;
   color: var(--light-green);
-  cursor: pointer;
+  display: inline-block; // <= this is because the animation breaks if the tag breaks line 
 }
 
 a.link::before {
@@ -64,6 +64,7 @@ a.link::before {
   background-color: var(--light-green);;
   transform: scaleX(0);
   //transform-origin: top right; 
+   //^^ transform-origin default value is 50% 50% so it will start from the center. to change directions use top right/left
   transition: transform 0.3s ease;
 }
 
