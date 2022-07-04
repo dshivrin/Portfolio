@@ -1,12 +1,10 @@
-//TODO: MAKE THE WIDTH OF THE DIV AUTO / ADJUST FOR EACH TITLE
-//ADD ARROW ANIMATION 
 
 //Based on annimation created by Panos Christophides
 //https://www.sliderrevolution.com/resources/css-border-animation/#:~:text=CSS%20border%20animation%20is%20useful,container%20element%20a%20unique%20style.
+//https://codepen.io/RenMan/pen/jwWKMb
 
 //local variables
-$width: 200px;
-//$width  : auto;
+$width: 210px;
 $height: 35px;
 $stroke: 2px;
 $transition_duration: 100ms;
@@ -26,11 +24,7 @@ $pipes: 4;
 }
 
 .box {
-  width: auto;
-  min-width: 200px;
-  max-width: 350px;
-  //width: auto ;
-  min-width: 200px;
+  width: $width;
   height: $height;
   background: transparent;
   text-align: center;
@@ -43,7 +37,7 @@ $pipes: 4;
   //todo: add h2::after arrow animation
   transition: ($transition_duration * $pipes) + $transition_duration ease;
   //clockwise border animation:
-  //top 
+  //top
   &:before {
     position: absolute;
     width: 0;
@@ -87,8 +81,14 @@ $pipes: 4;
     left: -$stroke;
     @include border-animation(height, ease, 0);
   }
+  &-inner:hover{
+    #arrowAnim {
+      display: flex;
+    }
+  }
   &:hover {
     border-color: transparent;
+    
     &:before {
       width: $pipeline_width;
       @include border-animation(width, ease, 0);
@@ -105,5 +105,76 @@ $pipes: 4;
       height: $pipeline_height;
       @include border-animation(height, ease, 3);
     }
+  }
+}
+
+//arrows animation
+#arrowAnim {
+  // display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-right: 25px;
+   display:none;
+}
+
+//creating a square using borders, coloring only the borders and rotating it
+.arrow {
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-color: var(--light-green) transparent transparent var(--light-green);//top + left borders
+  transform: rotate(135deg);
+}
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 3s linear infinite;
+  animation: slide 3s linear infinite;
+  margin-bottom: 8px;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-1.5vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-1vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1.5vw);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-1.5vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-1vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1.5vw);
   }
 }
