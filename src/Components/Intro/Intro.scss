@@ -1,0 +1,12 @@
+.intro {
+    font-weight: 400;
+}
+
+.name {
+  font-size: clamp(1.5em, 12vw, 4.5em);
+}
+
+.description {
+    font-size: clamp(1.5em, 12vw, 2.5em);
+    opacity: 0.7;
+}
