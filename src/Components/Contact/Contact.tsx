@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 import gmailLogo from "Media/logo-gmail.png";
 import whatsAppLogo from "Media/whatsapp-logo.png";
 import linkedInLogo from "Media/linkedin-logo.png";
-import charachter from "Media/dancing-business-character.jpg";
+import configData from "Data/configs.json";
 import "./Contact.scss";
 
 // const Slice = () => {
@@ -38,7 +38,13 @@ import "./Contact.scss";
 
 //TODO: use icons for each contact option
 const Contact = () => {
-  const whatsappApiAddr = `https://api.whatsapp.com/send?phone=972544907782"`;
+  const contactInfo = configData.CONTACT_INFO;
+  const externalUrls = configData.EXTERNAL_URLS;
+
+  const whatsapp = `${externalUrls.WHATSAPP_API}/send?phone=${contactInfo.MOBILE}"`;
+  const email = `mailto:${contactInfo.EMAIL}?subject=Hello World!`;
+  const linkedIn = contactInfo.LINKEDIN;
+
   //Slice();
   return (
     <Container id="contact">
@@ -53,27 +59,23 @@ const Contact = () => {
         <br />
         <br />
       </StyledInner>
-      {/* <StyledInner>
-        <div id="image-container" className="image-container">
-          <img id="" src={charachter} />
-        </div>
-      </StyledInner> */}
+      {/* TODO: consider adding some animated charachter  */}
       <div className="links-container">
         <a
           target="blank"
-          href="mailto:dshivrin@gmail.com?subject=Hello World!"
+          href={email}
           className="contact-url email"
           style={{ backgroundImage: `url(${gmailLogo})` }}
         ></a>
         <a
           target="blank"
-          href="https://api.whatsapp.com/send?phone=972544907782"
+          href={whatsapp}
           className="contact-url whatsapp"
           style={{ backgroundImage: `url(${whatsAppLogo})` }}
         ></a>
         <a
           target="blank"
-          href="https://www.linkedin.com/in/dima-shivrin/"
+          href={linkedIn}
           className="contact-url linkedIn"
           style={{ backgroundImage: `url(${linkedInLogo})` }}
         ></a>
