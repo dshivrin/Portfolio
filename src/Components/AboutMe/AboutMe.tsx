@@ -1,3 +1,5 @@
+
+import { elementType } from "Core/types";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import Title from "../Title/Title";
 import SkillsList from "./SkillsList";
@@ -19,9 +21,12 @@ const FrontEndSkills = ["Angular (JS/2+)", "React", "JQuery"];
 const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
 const DBSkills = ["SQL", "MongoDB"];
 
+
+
 const AboutMe = () => {
   return (
     <div id="about" style={ContainerStyle}>
+      
       <Title text="About Me" />
       <StyledInner>
         <div>
@@ -37,15 +42,15 @@ const AboutMe = () => {
               meduim and large companies, using variety of tools. I started at a
               small company that provides the most effective{" "}
               <a
-                className="company-url"
+                className="link company-url"
                 target="blank"
                 href="https://www.niloosoft.com/?lang=en"
               >
-                 HR solutions
+                HR solutions
               </a>
               , then dived into a{" "}
               <a
-                className="company-url"
+                className="link company-url"
                 target="blank"
                 href="https://www.sag121.com/"
               >
@@ -53,20 +58,28 @@ const AboutMe = () => {
               </a>
               ,{" "}
               <a
-                className="company-url"
+                className="link company-url"
                 target="blank"
                 href="https://aeronautics-sys.com/"
               >
                 a security contracter
               </a>{" "}
               and a{" "}
+              <br/>
               <a
-                className="company-url"
+                className="link company-url"
                 target="blank"
                 href="https://www.smoove.io/"
               >
                 marketing automation company
               </a>
+              {/* <a
+                className="link company-url"
+                target="blank"
+                href="https://www.smoove.io/"
+              >
+                marketing automation company
+              </a> */}
               .
             </p>
             <br />

@@ -4,7 +4,7 @@ import { StyledNavItem } from "../../Shared/StyledComponents/NavItem";
 const NavItem = (props: NavItemProps) => {
   return (
     <StyledNavItem>
-      <a href={props.href}>{props.text}</a>
+      <a className="link" href={props.href}>{props.text}</a>
     </StyledNavItem>
   );
 };
