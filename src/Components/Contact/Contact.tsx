@@ -7,6 +7,7 @@ import linkedInLogo from "Media/linkedin-logo.png";
 import configData from "Data/configs.json";
 import styled from "styled-components";
 import "./Contact.scss";
+import Morty from "Components/Shared/Morty/Morty";
 
 // const Slice = () => {
 //   const imgContainer = document.getElementById("image-container");
@@ -39,7 +40,7 @@ import "./Contact.scss";
 
 const ContactContainer = styled(Container)`
   max-width: 900px;
-  height: auto;//overides 10vh/ todo: investigate
+  height: auto; //overides 10vh/ todo: investigate
   margin: 0 auto;
 `;
 
