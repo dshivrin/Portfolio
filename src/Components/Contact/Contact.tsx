@@ -32,7 +32,7 @@ const Contact = () => {
       <StyledInner>
         <p>
           I'm currently looking for my next challenge! If you have an
-          interesting suggestion for me
+          interesting suggestion for me, say hi!
         </p>
         <br />
         <br />

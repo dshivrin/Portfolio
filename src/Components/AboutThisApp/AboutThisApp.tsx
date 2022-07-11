@@ -1,16 +1,34 @@
 import { Container } from "../Shared/StyledComponents/Container";
+import styled from "styled-components";
 import Title from "../Title/Title";
+
+const AboutContainer = styled(Container)`
+  height: 35vh;
+`;
 
 //Logos are taken from https://www.freepnglogos.com/
 const AboutThisApp = () => {
   return (
-    <Container>
+    <AboutContainer>
       <Title text={"About This App"} />
-      <p className="contact">
-        This potfolio project was written in React v18.1.0 Using Typescript and
-        SCSS
+      <p>This is my playground, where I learn and experiment.</p>
+      <br />
+      <p>
+        Upcoming: I'm currently working on 2 projects.
+        <ul>
+          <li>1.Conway's game of life</li>
+          <li>
+            2. A new arduino leds project (previous one accidentally destroyed
+            during renovations)
+          </li>
+        </ul>
       </p>
-    </Container>
+      <br />
+      <p>
+        This potfolio project was written in React v18.1.0 Using Typescript and
+        SCSS.
+      </p>
+    </AboutContainer>
   );
 };
 
