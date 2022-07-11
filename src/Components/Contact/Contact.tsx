@@ -7,46 +7,17 @@ import linkedInLogo from "Media/linkedin-logo.png";
 import configData from "Data/configs.json";
 import styled from "styled-components";
 import "./Contact.scss";
-import Morty from "Components/Shared/Morty/Morty";
-
-// const Slice = () => {
-//   const imgContainer = document.getElementById("image-container");
-//   const slices = 4;
-//   const w = imgContainer!.offsetWidth;
-//   const h = imgContainer!.offsetHeight;
-//   //const img = document.querySelectorAll("#image-container img")[0]?.src;
-//   const delay = 0.05;
-
-//console.log(charachter);
-
-//refactor
-//   const create = () => {
-//     for (let x = 0; x < slices; x++) {
-//       const width = (x * w) / slices + "px";
-//       const div = document.createElement("div");
-
-//       imgContainer?.appendChild(div);
-
-//       div.style.left = width;
-//       div.style.top = "0px";
-//       div.style.width = w / slices + "px";
-//       div.style.height = h + "px";
-//       div.style.backgroundImage = "url(" + charachter + ")";
-//     }
-//   };
-
-//   create();
-// };
 
 const ContactContainer = styled(Container)`
   max-width: 900px;
-  height: auto; //overides 10vh/ todo: investigate
+  height: 80vh; //overides 10vh/ todo: investigate
   margin: 0 auto;
 `;
 
+const contactInfo = configData.CONTACT_INFO;
+const externalUrls = configData.EXTERNAL_URLS;
+
 const Contact = () => {
-  const contactInfo = configData.CONTACT_INFO;
-  const externalUrls = configData.EXTERNAL_URLS;
 
   const whatsapp = `${externalUrls.WHATSAPP_API}/send?phone=${contactInfo.MOBILE}"`;
   const email = `mailto:${contactInfo.EMAIL}?subject=Hello World!`;

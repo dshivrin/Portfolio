@@ -2,6 +2,7 @@
   width: 600px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
   margin-top: 50px;
 }
 
@@ -15,6 +16,10 @@ a.contact-url {
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: center;
+
+  &:hover{
+    filter: drop-shadow(0 0 1mm rgb(220, 210, 220));
+  }
 
   &:active {
     opacity: 0.85;
