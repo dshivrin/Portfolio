@@ -23,6 +23,6 @@ a.contact-url {
 
   &:active {
     opacity: 0.85;
-    filter: drop-shadow(0 0 2mm rgb(232, 228, 234));//this adds "box-shadow" to the bg image
+    filter: drop-shadow(0 0 2mm var(--light-green));//this adds "box-shadow" to the bg image
   }
 }

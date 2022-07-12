@@ -1,6 +1,7 @@
 {
   "EXTERNAL_URLS": {
-    "WHATSAPP_API": "`https://api.whatsapp.com"
+    "WHATSAPP_API": "https://api.whatsapp.com",
+    "RESUME_URL": "https://sparkling-clafoutis-e263fe.netlify.app/Dima%20Shivrin%20Resume.docx"
   },
   "CONTACT_INFO": {
     "EMAIL": "dshivrin@gmail.com",
