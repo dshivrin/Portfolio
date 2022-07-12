@@ -42,7 +42,7 @@ const Intro = () => {
       </Header>
       {/* <Name className="name">Dima Shivrin</Name> */}
       <h3 className="name">Dima Shivrin.</h3>
-      <h3 className="description">I'm a Senior Full-Stack Engineer</h3>
+      <h3 className="description">A Senior Full-Stack Engineer.</h3>
     </IntroContainer>
   );
 };
