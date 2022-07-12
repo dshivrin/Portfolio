@@ -6,6 +6,10 @@ const AboutContainer = styled(Container)`
   height: 35vh;
 `;
 
+const listStyle = {
+  listStyle: "none"
+}
+
 //Logos are taken from https://www.freepnglogos.com/
 const AboutThisApp = () => {
   return (
@@ -15,7 +19,7 @@ const AboutThisApp = () => {
       <br />
       <p>
         Upcoming: I'm currently working on 2 projects.
-        <ul>
+        <ul style={listStyle}>
           <li>1.Conway's game of life</li>
           <li>
             2. A new arduino leds project (previous one accidentally destroyed

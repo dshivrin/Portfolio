@@ -42,19 +42,19 @@ const Contact = () => {
         <a
           target="blank"
           href={email}
-          className="contact-url email"
+          className="contact-url"
           style={{ backgroundImage: `url(${gmailLogo})` }}
         ></a>
         <a
           target="blank"
           href={whatsapp}
-          className="contact-url whatsapp"
+          className="contact-url"
           style={{ backgroundImage: `url(${whatsAppLogo})` }}
         ></a>
         <a
           target="blank"
           href={linkedIn}
-          className="contact-url linkedIn"
+          className="contact-url"
           style={{ backgroundImage: `url(${linkedInLogo})` }}
         ></a>
       </div>
