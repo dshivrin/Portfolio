@@ -5,7 +5,6 @@ import Experience from "Components/Experience/Experience";
 import Footer from "Components/Footer/Footer";
 import Intro from "Components/Intro/Intro";
 
-
 const Main = () => {
   return (
     <div className="main-container">
