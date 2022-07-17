@@ -3,6 +3,7 @@
 export type NavItemProps = {
   text: string;
   href: string;
+  cssclass: string;
 };
 
 export type TitleProps = {

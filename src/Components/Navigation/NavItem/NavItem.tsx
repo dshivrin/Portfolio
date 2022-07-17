@@ -2,9 +2,12 @@ import { NavItemProps } from "../../../Core/types";
 import { StyledNavItem } from "../../Shared/StyledComponents/NavItem";
 
 const NavItem = (props: NavItemProps) => {
+
+const {cssclass, href, text} = props;
+
   return (
     <StyledNavItem>
-      <a className="link" href={props.href}>{props.text}</a>
+      <a className={cssclass} href={href}>{text}</a>
     </StyledNavItem>
   );
 };
