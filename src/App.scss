@@ -43,13 +43,17 @@ body {
   //See https://stackoverflow.com/questions/23980085/multiple-css-counters-not-working-as-expected
   counter-reset: title-counter nav-counter;
   //counter-reset: nav-counter; <=== this breaks the count for that variable
+
+  @media (max-width: 768px) {
+    font-size: 1.35em;
+  }
 }
 
 a.link {
   position: relative;
   text-decoration: none;
   color: var(--light-green);
-  display: inline-block; // <= this is because the animation breaks if the tag breaks line
+  display: inline-block; // <= this is because the underscore animation breaks if the tag breaks line
 }
 
 /*
