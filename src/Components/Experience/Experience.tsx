@@ -1,20 +1,20 @@
 import Title from "../Title/Title";
-import {
-  Container,
-  DesktopContainer,
-  MobileContainer,
-} from "../Shared/StyledComponents/Container";
+import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
 import { useState } from "react";
 import data from "../../Data/data.json";
 import ExperienceContent from "./Switchable/ExperienceContent";
 import { Workplace } from "../../Core/types";
 import Tabs from "./Switchable/Tabs/Tabs";
-import Carousel from "./Carousel/Carousel";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 
 const StyledInnerColumn = styled(StyledInner)`
   flex-direction: column;
+  margin: 0 auto;
+`;
+
+const StyledInnerRow = styled(StyledInner)`
+  flex-direction: row;
   margin: 0 auto;
 `;
 
@@ -52,15 +52,6 @@ const Experience = () => {
     flex-direction: column;
   `;
 
-  const innerStyles = {
-    display: "flex",
-    alignContent: "center",
-    justifyContent: "space-evenly",
-    maxWidth: "900px",
-    gap: "15px",
-    margin: "0 auto",
-  };
-
   //to match the gap between the flex items
   const titleStyle = {
     marginBottom: "15px",
@@ -70,13 +61,10 @@ const Experience = () => {
     <ExperienceContainer id="experience">
       <StyledInnerColumn>
         <Title style={titleStyle} text="Work experience" />
-        <DesktopContainer style={innerStyles}>
+        <StyledInnerRow>
           <Tabs tabs={workplaces} OnClick={OnTitleClick} />
           <ExperienceContent selectedWorkplace={selectedWorkPlace} />
-        </DesktopContainer>
-        <MobileContainer>
-          <Carousel OnClick={() => console.log("hey")} tabs={workplaces} />
-        </MobileContainer>
+        </StyledInnerRow>
       </StyledInnerColumn>
     </ExperienceContainer>
   );

@@ -12,6 +12,12 @@ export const Container = styled.div`
 export const DesktopContainer = styled(Container)`
   flex-direction: row;
   height: auto;
+  display: "flex";
+  align-content: "center";
+  justify-content: "space-evenly";
+  max-width: "900px";
+  gap: "15px";
+  margin: "0 auto";
   @media (max-width: 768px) {
     display: none;
   }

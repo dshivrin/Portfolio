@@ -14,7 +14,7 @@ const AboutContainer = styled(Container)`
   height: 100vh;
   @media (max-width: 768px) {
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
   }
 `;
 

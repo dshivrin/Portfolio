@@ -30,7 +30,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: var(--font-color);
-  //position: absolute;// this solves an annoying bug on chrome mobile view.. 
+  
   .main-container {
     margin: 0 auto;
   }
@@ -46,6 +46,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 1.35em;
+    position: absolute;// this solves an annoying bug on chrome mobile view.. 
   }
 }
 
