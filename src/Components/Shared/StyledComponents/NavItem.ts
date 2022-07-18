@@ -20,7 +20,7 @@ export const StyledNavItem = styled.span`
     //padding: 5px 5px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     display: none;
   }
 

@@ -9,7 +9,7 @@ export const NavbarContainer = styled.nav<{ extendNavbar: boolean }>`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     height: 60px;
   }
 `;
@@ -51,7 +51,7 @@ export const NavbarLink = styled(Link)`
     font-weight: 200;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -79,7 +79,7 @@ export const OpenLinksButton = styled.button`
   font-size: 40px;
   cursor: pointer;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -89,7 +89,7 @@ export const NavbarExtendedContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
@@ -115,14 +115,14 @@ export const DownloadResumeButton = styled.a`
     box-shadow: 0px 0px 10px 6px rgba(100, 255, 218, 0.34);
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     display: none;
     margin: 25px 0 0 0;
   }
 `;
 
 export const DownloadResumeButtonExtended = styled(DownloadResumeButton)`
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     display: inline;
     margin-top: 15px;
   }
