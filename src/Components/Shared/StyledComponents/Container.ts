@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-//Component container
+//Basic container
 export const Container = styled.div`
   height: 100vh;
   display: flex;
@@ -9,23 +9,14 @@ export const Container = styled.div`
   text-align: center;
 `;
 
-export const DesktopContainer = styled(Container)`
-  flex-direction: row;
-  height: auto;
-  display: "flex";
-  align-content: "center";
-  justify-content: "space-evenly";
-  max-width: "900px";
-  gap: "15px";
-  margin: "0 auto";
+export const TitleContainer = styled.div`
+  display: flex;
+  gap: 10px;
   @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const MobileContainer = styled(Container)`
-  height: auto;
-  @media (min-width: 768px) {
-    display: none;
+    flex-direction: column;
+    gap: 0px;
+    h1 {
+      font-size: 1.5em;
+    }
   }
 `;
