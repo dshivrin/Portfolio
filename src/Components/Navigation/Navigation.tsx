@@ -48,9 +48,9 @@ const Navigation = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="/about"> About</NavbarLinkExtended>
-          <NavbarLinkExtended to="/experience"> Experience</NavbarLinkExtended>
-          <NavbarLinkExtended to="/contact"> Contact</NavbarLinkExtended>
+          <NavbarLinkExtended to="#about"> About</NavbarLinkExtended>
+          <NavbarLinkExtended to="#experience"> Experience</NavbarLinkExtended>
+          <NavbarLinkExtended to="#contact"> Contact</NavbarLinkExtended>
           <DownloadResumeButtonExtended href={externalUrls.RESUME_URL}>
             {" "}
             RESUME

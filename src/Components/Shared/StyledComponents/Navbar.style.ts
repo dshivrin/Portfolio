@@ -8,7 +8,8 @@ export const NavbarContainer = styled.nav<{ extendNavbar: boolean }>`
   color: var(--font-color);
   display: flex;
   flex-direction: column;
-
+  position: fixed;
+  z-index: 2;
   @media (min-width: 768px) {
     height: 60px;
   }
