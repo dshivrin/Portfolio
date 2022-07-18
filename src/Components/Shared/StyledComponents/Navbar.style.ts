@@ -51,7 +51,6 @@ export const NavbarLink = styled(Link)`
     font-size: 0.9em;
     font-weight: 200;
   }
-
   @media (max-width: 768px) {
     display: none;
   }

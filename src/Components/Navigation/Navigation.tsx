@@ -11,11 +11,11 @@ import {
   NavbarLinkContainer,
   OpenLinksButton,
   Logo,
-  NavbarLinkExtended,
   DownloadResumeButton,
   DownloadResumeButtonExtended,
 } from "../Shared/StyledComponents/Navbar.style";
 import { useState } from "react";
+import NavItemMobile from "./NavItem/NavItemMobile";
 
 const externalUrls = configData.EXTERNAL_URLS;
 
@@ -48,9 +48,27 @@ const Navigation = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="#about"> About</NavbarLinkExtended>
-          <NavbarLinkExtended to="#experience"> Experience</NavbarLinkExtended>
-          <NavbarLinkExtended to="#contact"> Contact</NavbarLinkExtended>
+          <a
+            className="link-mobile"
+            href="#about"
+            onClick={() => setExtendNavbar(false)}
+          >
+            About
+          </a>
+          <a
+            className="link-mobile"
+            href="#experience"
+            onClick={() => setExtendNavbar(false)}
+          >
+            Experience
+          </a>
+          <a
+            className="link-mobile"
+            href="#contact"
+            onClick={() => setExtendNavbar(false)}
+          >
+            Contact
+          </a>
           <DownloadResumeButtonExtended href={externalUrls.RESUME_URL}>
             {" "}
             RESUME

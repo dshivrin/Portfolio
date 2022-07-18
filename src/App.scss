@@ -55,6 +55,19 @@ a.link {
   text-decoration: none;
   color: var(--light-green);
   display: inline-block; // <= this is because the underscore animation breaks if the tag breaks line
+  @media (max-width: 768px) {
+    display:none;
+  }
+}
+
+a.link-mobile{
+  position: relative;
+  text-decoration: none;
+  color: var(--light-green);
+  display: inline-block; // <= this is because the underscore animation breaks if the tag breaks line
+  @media (min-width: 768px) {
+    display:none;
+  }
 }
 
 /*
@@ -62,7 +75,7 @@ a.link {
   to change directions use transform-origin: right/left/0%/100%
   since there is no transformation on the Y axis.
    */
-a.link::before {
+a.link::before, a.link-mobile::before  {
   content: "";
   position: absolute;
   display: block;
@@ -77,7 +90,7 @@ a.link::before {
   transition: transform 0.3s ease;
 }
 
-a.link:hover::before {
+a.link:hover::before, a.link-mobile:hover::before {
   transform: scaleX(1);
 }
 
