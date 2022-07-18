@@ -102,6 +102,7 @@ export const DownloadResumeButton = styled.a`
   color: var(--font-color);
   border-radius: 5px;
   padding: 5px 13px;
+  margin: 0 0 0 15px;
 
   &:hover {
     -webkit-box-shadow: 0px 0px 10px 12px rgba(10, 25, 47, 0.34);
@@ -116,11 +117,13 @@ export const DownloadResumeButton = styled.a`
 
   @media (max-width: 700px) {
     display: none;
+    margin: 25px 0 0 0;
   }
 `;
 
 export const DownloadResumeButtonExtended = styled(DownloadResumeButton)`
   @media (max-width: 700px) {
     display: inline;
+    margin-top: 15px;
   }
 `;

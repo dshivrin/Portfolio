@@ -1,11 +1,22 @@
 import Title from "../Title/Title";
-import { Container } from "../Shared/StyledComponents/Container";
+import {
+  Container,
+  DesktopContainer,
+  MobileContainer,
+} from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import data from "../../Data/data.json";
 import ExperienceContent from "./Switchable/ExperienceContent";
 import { Workplace } from "../../Core/types";
 import Tabs from "./Switchable/Tabs/Tabs";
+import Carousel from "./Carousel/Carousel";
+import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
+
+const StyledInnerColumn = styled(StyledInner)`
+  flex-direction: column;
+  margin: 0 auto;
+`;
 
 //todo: mobile version
 const Experience = () => {
@@ -19,10 +30,13 @@ const Experience = () => {
   //For some reason VS code claims 'event' es depricated, so I use 'any'
   const OnTitleClick = (event: any): void => {
     const selectedSectionId = event.target.id;
-    const selectedWP = workplaces.find((w) => w.id == selectedSectionId);
+    const selectedWP = workplaces.find((w) => w.id === +selectedSectionId);
+
+    //Todo: add global error page
+    if (!selectedWP) return;
 
     const newState = workplaces.map((wp) => {
-      if (wp.id != +selectedSectionId) wp.selected = false;
+      if (wp.id !== +selectedSectionId) wp.selected = false;
       else wp.selected = true;
       return wp;
     });
@@ -35,6 +49,7 @@ const Experience = () => {
     max-width: 900px;
     text-align: left;
     margin: 0 auto;
+    flex-direction: column;
   `;
 
   const innerStyles = {
@@ -53,11 +68,16 @@ const Experience = () => {
 
   return (
     <ExperienceContainer id="experience">
-      <Title style={titleStyle} text="Work experience" />
-      <div style={innerStyles}>
-        <Tabs tabs={workplaces} OnClick={OnTitleClick} />
-        <ExperienceContent selectedWorkplace={selectedWorkPlace} />
-      </div>
+      <StyledInnerColumn>
+        <Title style={titleStyle} text="Work experience" />
+        <DesktopContainer style={innerStyles}>
+          <Tabs tabs={workplaces} OnClick={OnTitleClick} />
+          <ExperienceContent selectedWorkplace={selectedWorkPlace} />
+        </DesktopContainer>
+        <MobileContainer>
+          <Carousel OnClick={() => console.log("hey")} tabs={workplaces} />
+        </MobileContainer>
+      </StyledInnerColumn>
     </ExperienceContainer>
   );
 };

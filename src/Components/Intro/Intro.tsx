@@ -4,15 +4,6 @@ import { Container } from "../Shared/StyledComponents/Container";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import "./Intro.scss";
 
-const Name = styled.h1`
-  font-family: Madelican;
-  font-size: clamp(
-    1.5em,
-    12vw,
-    4.5em
-  ); //clamp(min, value, maximum), base value is set in
-`;
-
 const Header = styled.div`
   //justify-items: start;
   color: var(--light-green);
@@ -23,9 +14,11 @@ const IntroContainer = styled(Container)`
   text-align: left;
   width: 800px;
   margin: 0 auto;
-  /* @media (max-width: 768px) {
+  //height: 100vh;
+  @media (max-width: 768px) {
     margin: 0 auto;
-  } */
+    height: 100vh;
+  }
 `;
 
 const animatedTextData = {

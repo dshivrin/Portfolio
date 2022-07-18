@@ -6,6 +6,7 @@ display: flex;
 flex-direction: row;
 gap: 25px;
 justify-content: center;
+margin: auto;
 @media (max-width: 768px) {
   flex-direction: column;
   padding: 0 20px;

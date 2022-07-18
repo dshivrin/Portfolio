@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Title from "../Title/Title";
 
 const AboutContainer = styled(Container)`
-  height: 35vh;
+  height: 100vh;
+  flex-direction: column;
 `;
 
 const listStyle = {

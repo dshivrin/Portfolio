@@ -7,5 +7,19 @@ export const Container = styled.div`
   justify-content: center;
   justify-items: center;
   text-align: center;
-  flex-direction: column;
+`;
+
+export const DesktopContainer = styled(Container)`
+  flex-direction: row;
+  height: auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileContainer = styled(Container)`
+  height: auto;
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;

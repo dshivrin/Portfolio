@@ -10,8 +10,13 @@ import "./Contact.scss";
 
 const ContactContainer = styled(Container)`
   max-width: 900px;
-  height: 80vh; //overides 10vh/ todo: investigate
+  height: 80vh; //overides 100vh/ todo: investigate
   margin: 0 auto;
+  flex-direction: column;
+`;
+
+const ContactInner = styled(StyledInner)`
+margin: unset;
 `;
 
 const contactInfo = configData.CONTACT_INFO;
@@ -29,14 +34,14 @@ const Contact = () => {
       <Title text="So Now What?" />
       <h3>Say Hello</h3>
       <br />
-      <StyledInner>
+      <ContactInner>
         <p>
           I'm currently looking for my next challenge! If you have an
           interesting suggestion for me, say hi!
         </p>
         <br />
         <br />
-      </StyledInner>
+      </ContactInner>
       {/* TODO: consider adding some animated charachter  */}
       <div className="links-container">
         <a

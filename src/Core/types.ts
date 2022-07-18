@@ -44,6 +44,7 @@ export type ExperienceContentProps = {
 
 export type PositionProps = {
   workplace: Workplace;
+  styles?: object | {};
 };
 
 export type ExperienceProps = {
