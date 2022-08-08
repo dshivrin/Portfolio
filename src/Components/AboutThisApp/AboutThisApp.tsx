@@ -31,12 +31,19 @@ const AboutThisApp = () => {
       <br />
       <p>
         If you wish to view the source code for this project, you can go to my{" "}
-        <a href="https://github.com/dshivrin">github account</a>.
+        <a className="link" target="blank" href="https://github.com/dshivrin">
+          github account
+        </a>
+        .
       </p>
       <p>
         {" "}
         If you wish to explore some of the anmimations used here you can explore
-        my <a href="https://codepen.io/dshivrin">codepen</a>
+        my{" "}
+        <a className="link" target="blank" href="https://codepen.io/dshivrin">
+          codepen
+        </a>
+        .
       </p>
     </AboutContainer>
   );
