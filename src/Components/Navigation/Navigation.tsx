@@ -1,6 +1,6 @@
 import "./Navigation.scss";
 import NavItem from "./NavItem/NavItem";
-import logoImg from "Media/logo_adobe_express.png";
+import logoImg from "Media/DS_logo.png";
 import configData from "Data/configs.json";
 import {
   NavbarContainer,
@@ -15,7 +15,6 @@ import {
   DownloadResumeButtonExtended,
 } from "../Shared/StyledComponents/Navbar.style";
 import { useState } from "react";
-import NavItemMobile from "./NavItem/NavItemMobile";
 
 const externalUrls = configData.EXTERNAL_URLS;
 
