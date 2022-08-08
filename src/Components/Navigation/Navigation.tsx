@@ -21,6 +21,10 @@ const externalUrls = configData.EXTERNAL_URLS;
 const Navigation = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
@@ -42,7 +46,7 @@ const Navigation = () => {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
-          <Logo src={logoImg}></Logo>
+          <Logo onClick={scrollToTop} src={logoImg}></Logo>
         </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (
