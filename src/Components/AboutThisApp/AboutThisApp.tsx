@@ -8,8 +8,8 @@ const AboutContainer = styled(Container)`
 `;
 
 const listStyle = {
-  listStyle: "none"
-}
+  listStyle: "none",
+};
 
 //Logos are taken from https://www.freepnglogos.com/
 const AboutThisApp = () => {
@@ -30,8 +30,13 @@ const AboutThisApp = () => {
       </p>
       <br />
       <p>
-        This potfolio project was written in React v18.1.0 Using Typescript and
-        SCSS.
+        If you wish to view the source code for this project, you can go to my{" "}
+        <a href="https://github.com/dshivrin">github account</a>.
+      </p>
+      <p>
+        {" "}
+        If you wish to explore some of the anmimations used here you can explore
+        my <a href="https://codepen.io/dshivrin">codepen</a>
       </p>
     </AboutContainer>
   );
