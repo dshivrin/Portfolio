@@ -31,7 +31,7 @@ const AboutThisApp = () => {
       <br />
       <p>
         If you wish to view the source code for this project, you can go to my{" "}
-        <a className="link" target="blank" href="https://github.com/dshivrin">
+        <a className="link" target="blank" href="https://github.com/dshivrin/Portfolio">
           github account
         </a>
         .
