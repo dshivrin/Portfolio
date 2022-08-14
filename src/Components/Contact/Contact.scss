@@ -17,6 +17,11 @@ a.contact-url {
   background-size: 50px 50px;
   background-position: center;
 
+  //hides the anchor text, in favor of accesability 
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
   &:hover{
     filter: drop-shadow(0 0 1mm rgb(220, 210, 220));
   }

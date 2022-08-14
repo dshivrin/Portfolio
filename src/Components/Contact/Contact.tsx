@@ -16,14 +16,13 @@ const ContactContainer = styled(Container)`
 `;
 
 const ContactInner = styled(StyledInner)`
-margin: unset;
+  margin: unset;
 `;
 
 const contactInfo = configData.CONTACT_INFO;
 const externalUrls = configData.EXTERNAL_URLS;
 
 const Contact = () => {
-
   const whatsapp = `${externalUrls.WHATSAPP_API}/send?phone=${contactInfo.MOBILE}"`;
   const email = `mailto:${contactInfo.EMAIL}?subject=Hello World!`;
   const linkedIn = contactInfo.LINKEDIN;
@@ -49,19 +48,25 @@ const Contact = () => {
           href={email}
           className="contact-url"
           style={{ backgroundImage: `url(${gmailLogo})` }}
-        ></a>
+        >
+          Gmail
+        </a>
         <a
           target="blank"
           href={whatsapp}
           className="contact-url"
           style={{ backgroundImage: `url(${whatsAppLogo})` }}
-        ></a>
+        >
+          WatsApp
+        </a>
         <a
           target="blank"
           href={linkedIn}
           className="contact-url"
           style={{ backgroundImage: `url(${linkedInLogo})` }}
-        ></a>
+        >
+          LinkedIn
+        </a>
       </div>
     </ContactContainer>
   );
