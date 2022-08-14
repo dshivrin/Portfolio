@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Title from "../Title/Title";
 
 const AboutContainer = styled(Container)`
-  height: 100vh;
+  //height: 100vh;
   flex-direction: column;
 `;
 

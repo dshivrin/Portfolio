@@ -10,7 +10,7 @@ import "./Contact.scss";
 
 const ContactContainer = styled(Container)`
   max-width: 900px;
-  height: 80vh; //overides 100vh/ todo: investigate
+  //height: 80vh; //overides 100vh/ todo: investigate
   margin: 0 auto;
   flex-direction: column;
 `;
