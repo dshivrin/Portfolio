@@ -5,6 +5,8 @@ import Title from "../Title/Title";
 const AboutContainer = styled(Container)`
   //height: 100vh;
   flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 const listStyle = {
@@ -31,7 +33,11 @@ const AboutThisApp = () => {
       <br />
       <p>
         If you wish to view the source code for this project, you can go to my{" "}
-        <a className="link" target="blank" href="https://github.com/dshivrin/Portfolio">
+        <a
+          className="link"
+          target="blank"
+          href="https://github.com/dshivrin/Portfolio"
+        >
           github account
         </a>
         .

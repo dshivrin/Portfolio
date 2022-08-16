@@ -14,7 +14,7 @@ const IntroContainer = styled(Container)`
   text-align: left;
   width: 800px;
   margin: 0 auto;
-  //height: 100vh;
+  padding-top: 80px;
   @media (max-width: 768px) {
     margin: 0 auto;
     height: 100vh;
