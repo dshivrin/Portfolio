@@ -7,9 +7,12 @@ const Title = (props: TitleProps) => {
   const { text, style } = props;
 
   return (
-    <h1 style={style} className="section-title">
-      {text}
-    </h1>
+    <div className="title-wrapper">
+      <h1 style={style} className="section-title">
+        {text}
+      </h1>
+      <hr />
+    </div>
   );
 };
 
