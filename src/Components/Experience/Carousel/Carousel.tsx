@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Position from "../Switchable/Position/Position";
-import DateRange from "../Switchable/Date-range/Date-range";
+import DateRange from "../../Shared/Date-range/Date-range";
 import ExperienceContent from "../Switchable/ExperienceContent";
 
 const Carousel = (props: ExperienceTabsProps) => {

@@ -1,4 +1,4 @@
-import DateRange from "Components/Experience/Switchable/Date-range/Date-range";
+import DateRange from "Components/Shared/Date-range/Date-range";
 import "./Footer.scss";
 
 const Footer = () => {

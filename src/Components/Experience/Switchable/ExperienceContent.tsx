@@ -1,5 +1,5 @@
 import { ExperienceContentProps, Workplace } from "Core/types";
-import DateRange from "./Date-range/Date-range";
+import DateRange from "../../Shared/Date-range/Date-range";
 import Position from "./Position/Position";
 
 //todo: investigate why the type returns undefined sometimes
