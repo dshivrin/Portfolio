@@ -1,4 +1,4 @@
-import Title from "../Title/Title";
+import Title from "../Shared/Title/Title";
 import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
 import { useState } from "react";

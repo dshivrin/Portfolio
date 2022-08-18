@@ -1,6 +1,6 @@
 import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
-import Title from "../Title/Title";
+import Title from "../Shared/Title/Title";
 
 const AboutContainer = styled(Container)`
   //height: 100vh;

@@ -1,6 +1,6 @@
 import { Container } from "../Shared/StyledComponents/Container";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
-import Title from "../Title/Title";
+import Title from "../Shared/Title/Title";
 import gmailLogo from "Media/logo-gmail.png";
 import whatsAppLogo from "Media/whatsapp-logo.png";
 import linkedInLogo from "Media/linkedin-logo.png";
