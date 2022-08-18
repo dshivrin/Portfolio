@@ -7,6 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   justify-items: center;
   text-align: center;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    height: 100vh;
+    width: auto;
+  }
 `;
 
 export const TitleContainer = styled.div`

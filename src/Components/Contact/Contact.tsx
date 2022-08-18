@@ -13,6 +13,11 @@ const ContactContainer = styled(Container)`
   //height: 80vh; //overides 100vh/ todo: investigate
   margin: 0 auto;
   flex-direction: column;
+  @media (max-width: 768px) {
+    height: 100vh;
+    width: auto;
+    gap: 40px;
+  }
 `;
 
 const ContactInner = styled(StyledInner)`

@@ -16,6 +16,9 @@ const StyledInnerColumn = styled(StyledInner)`
 const StyledInnerRow = styled(StyledInner)`
   flex-direction: row;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 //todo: mobile version
@@ -50,6 +53,11 @@ const Experience = () => {
     text-align: left;
     margin: 0 auto;
     flex-direction: column;
+    @media (max-width: 768px) {
+    height: 100vh;
+    width: auto;
+    gap: 40px;
+  }
   `;
 
   //to match the gap between the flex items

@@ -7,10 +7,18 @@ const AboutContainer = styled(Container)`
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    width: auto;
+    height: 100vh;
+  }
 `;
 
 const listStyle = {
   listStyle: "none",
+};
+
+const innerStyles = {
+  padding: "0 15px"
 };
 
 //Logos are taken from https://www.freepnglogos.com/
@@ -18,6 +26,7 @@ const AboutThisApp = () => {
   return (
     <AboutContainer>
       <Title text={"About This App"} />
+      <div style={innerStyles}>
       <p>This is my playground, where I learn and experiment.</p>
       <br />
       <p>
@@ -51,6 +60,7 @@ const AboutThisApp = () => {
         </a>
         .
       </p>
+      </div>
     </AboutContainer>
   );
 };

@@ -31,3 +31,11 @@ a.contact-url {
     filter: drop-shadow(0 0 2mm var(--font-color));//this adds "box-shadow" to the bg image
   }
 }
+
+@media (max-width: 768px) {
+  .links-container{
+    width:auto;
+    gap:45px;
+  }
+
+}

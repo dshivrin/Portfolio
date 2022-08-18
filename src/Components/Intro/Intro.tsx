@@ -18,6 +18,7 @@ const IntroContainer = styled(Container)`
   @media (max-width: 768px) {
     margin: 0 auto;
     height: 100vh;
+    width:auto;
   }
 `;
 

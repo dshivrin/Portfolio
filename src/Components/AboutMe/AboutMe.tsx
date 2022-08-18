@@ -13,8 +13,9 @@ const AboutContainer = styled(Container)`
   margin: 0 auto;
   height: 100vh;
   @media (max-width: 768px) {
-    margin: 0 auto;
-    height: auto;
+    width: auto;
+    height: 100%;//this component is heigher than 100vh
+    margin: 20px auto;
   }
 `;
 
@@ -22,11 +23,20 @@ const StyledInnerColumn = styled(StyledInner)`
   flex-direction: column;
 `;
 
-const skillsStyle = {
-  display: "flex",
-  alignContent: "center",
-  justifyContent: "space-evenly",
-};
+const SkillsStyled = styled(Container)`
+  display: "flex";
+  align-content: "center";
+  justify-content: "space-evenly";
+  display: flex;
+  @media (max-width: 768px) {
+    font-size: 1 em;
+    font-size: 0.8em;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 7px;
+    height: auto;
+  }
+`;
 
 const FrontEndSkills = ["Angular (JS/2+)", "React", "JQuery"];
 const BackEndSkills = ["ASP.NET", ".NET core", "Node.js"];
@@ -86,11 +96,11 @@ const AboutMe = () => {
               <br />
               <p>Here are the main technologies I’ve been working with:</p>
               <br />
-              <div style={skillsStyle}>
+              <SkillsStyled>
                 <SkillsList skills={FrontEndSkills} />
                 <SkillsList skills={BackEndSkills} />
                 <SkillsList skills={DBSkills} />
-              </div>
+              </SkillsStyled>
             </div>
           </div>
           <div>

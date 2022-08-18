@@ -46,7 +46,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 1.35em;
-    position: absolute;// this solves an annoying bug on chrome mobile view.. 
+    //position: absolute;// this solves an annoying bug on chrome mobile view.. 
   }
 }
 
@@ -55,9 +55,9 @@ a.link {
   text-decoration: none;
   color: var(--light-green);
   display: inline-block; // <= this is because the underscore animation breaks if the tag breaks line
-  @media (max-width: 768px) {
-    display:none;
-  }
+  // @media (max-width: 768px) {
+  //   display:none;
+  // }
 }
 
 a.link-mobile{

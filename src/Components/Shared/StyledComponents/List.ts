@@ -4,7 +4,10 @@ export const StyledList = styled.ul`
   list-style-type: none;
  
   li {
-    padding-left: 5px; //<== because the marker pseudo element refused to move
+    text-align: left;
+    @media (min-width: 768px) {
+      padding-left: 5px; //<== because the marker pseudo element refused to move
+    }
   }
 
   li::marker {
