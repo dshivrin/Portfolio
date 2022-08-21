@@ -53,6 +53,7 @@ const Experience = () => {
     text-align: left;
     margin: 0 auto;
     flex-direction: column;
+    margin-bottom: 15%;
     @media (max-width: 768px) {
     height: 100vh;
     width: auto;

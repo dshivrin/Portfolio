@@ -9,7 +9,7 @@ justify-content: center;
 margin: auto;
 @media (max-width: 768px) {
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 15px;
   gap: 30px;
   align-items: center;
 }

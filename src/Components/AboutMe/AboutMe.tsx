@@ -28,6 +28,7 @@ const SkillsStyled = styled(Container)`
   align-content: "center";
   justify-content: "space-evenly";
   display: flex;
+  gap:35px;
   @media (max-width: 768px) {
     font-size: 1 em;
     font-size: 0.8em;

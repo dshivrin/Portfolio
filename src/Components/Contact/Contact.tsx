@@ -10,9 +10,9 @@ import "./Contact.scss";
 
 const ContactContainer = styled(Container)`
   max-width: 900px;
-  //height: 80vh; //overides 100vh/ todo: investigate
   margin: 0 auto;
   flex-direction: column;
+  margin-bottom: 15%;
   @media (max-width: 768px) {
     height: 100vh;
     width: auto;
@@ -24,6 +24,10 @@ const ContactInner = styled(StyledInner)`
   margin: unset;
 `;
 
+const titleStyles = {
+  paddingBottom: "35px",
+}
+
 const contactInfo = configData.CONTACT_INFO;
 const externalUrls = configData.EXTERNAL_URLS;
 
@@ -32,10 +36,9 @@ const Contact = () => {
   const email = `mailto:${contactInfo.EMAIL}?subject=Hello World!`;
   const linkedIn = contactInfo.LINKEDIN;
 
-  //Slice();
   return (
     <ContactContainer id="contact">
-      <Title text="So Now What?" />
+      <Title style={titleStyles} text="So Now What?" />
       <h3>Say Hello</h3>
       <br />
       <ContactInner>
@@ -46,7 +49,6 @@ const Contact = () => {
         <br />
         <br />
       </ContactInner>
-      {/* TODO: consider adding some animated charachter  */}
       <div className="links-container">
         <a
           target="blank"

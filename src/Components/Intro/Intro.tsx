@@ -18,8 +18,12 @@ const IntroContainer = styled(Container)`
   @media (max-width: 768px) {
     margin: 0 auto;
     height: 100vh;
-    width:auto;
+    width: auto;
   }
+`;
+
+const StyledInnerWithPadding = styled(StyledInner)`
+  padding-top: 33%;
 `;
 
 const animatedTextData = {
@@ -34,7 +38,7 @@ const animatedTextData = {
 const Intro = () => {
   return (
     <IntroContainer id="intro">
-      <StyledInner>
+      <StyledInnerWithPadding>
         <div>
           <Header>
             {/* <AnimatedText {...animatedTextData} /> */}
@@ -44,7 +48,7 @@ const Intro = () => {
           <h3 className="name">Dima Shivrin.</h3>
           <h3 className="description">A Senior Full-Stack Engineer.</h3>
         </div>
-      </StyledInner>
+      </StyledInnerWithPadding>
     </IntroContainer>
   );
 };

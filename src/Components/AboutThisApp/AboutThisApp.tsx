@@ -7,6 +7,7 @@ const AboutContainer = styled(Container)`
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 15%;
   @media (max-width: 768px) {
     width: auto;
     height: 100vh;
@@ -18,7 +19,8 @@ const listStyle = {
 };
 
 const innerStyles = {
-  padding: "0 15px"
+  padding: "25px 15px",
+ // textAlign: "flex-start"
 };
 
 //Logos are taken from https://www.freepnglogos.com/
