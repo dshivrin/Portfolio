@@ -1,40 +1,36 @@
+import Carousel from "react-bootstrap/Carousel";
 import { ExperienceTabsProps } from "Core/types";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import DateRange from "Components/Shared/Date-range/Date-range";
 import Position from "../Switchable/Position/Position";
-import DateRange from "../../Shared/Date-range/Date-range";
-import ExperienceContent from "../Switchable/ExperienceContent";
 
-const Carousel = (props: ExperienceTabsProps) => {
+import bgImage from 'Media/calm-dark-blue-sea-background-picjumbo-com.jpg';
+
+function CarouselMobile(props: ExperienceTabsProps) {
   const workplaces = props.tabs.sort((a, b) => {
     return b.id - a.id;
   });
 
-  const settings = {
-    dots: true,
-  };
-
   const additionalStyles = {
     fontSize: "0.45em",
-    alignItems: "center"
-  }
+    alignItems: "center",
+  };
 
   return (
-    <div className="mobile-widget">
-      <Slider {...settings}>
-        {workplaces.map((wp, index) => {
-          return (
-            <div key={`content:${index}`}>
-              <Position workplace={wp} styles={additionalStyles}/>
+    <Carousel interval={null}>
+      {workplaces.map((wp, index) => {
+        return (
+          <Carousel.Item>
+            <img className="d-block w-100" src={bgImage}/>
+            <Carousel.Caption>
+              <Position workplace={wp} styles={additionalStyles} />
               <DateRange from={wp.from} to={wp.to} format="MMM YYYY" />
               <p>{wp.description}</p>
-            </div>
-          );
-        })}
-      </Slider>
-    </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
+    </Carousel>
   );
-};
+}
 
-export default Carousel;
+export default CarouselMobile;

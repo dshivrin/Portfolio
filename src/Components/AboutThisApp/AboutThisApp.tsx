@@ -8,6 +8,7 @@ const AboutContainer = styled(Container)`
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 15%;
+  text-align: left;
   @media (max-width: 768px) {
     width: auto;
     height: 100vh;

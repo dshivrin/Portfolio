@@ -7,6 +7,7 @@ import ExperienceContent from "./Switchable/ExperienceContent";
 import { Workplace } from "../../Core/types";
 import Tabs from "./Switchable/Tabs/Tabs";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
+import Carousel from "./Carousel/Carousel";
 
 const StyledInnerColumn = styled(StyledInner)`
   flex-direction: column;
@@ -55,10 +56,10 @@ const Experience = () => {
     flex-direction: column;
     margin-bottom: 15%;
     @media (max-width: 768px) {
-    height: 100vh;
-    width: auto;
-    gap: 40px;
-  }
+      height: 100vh;
+      width: auto;
+      gap: 40px;
+    }
   `;
 
   //to match the gap between the flex items
@@ -66,15 +67,29 @@ const Experience = () => {
     marginBottom: "15px",
   };
 
-  return (
-    <ExperienceContainer id="experience">
+  let width = globalThis.screen.availWidth;
+
+  const renderMobile = () => {
+    return (
       <StyledInnerColumn>
-        <Title style={titleStyle} text="Work experience" />
+        <Carousel tabs={workplaces} OnClick={OnTitleClick} />
+      </StyledInnerColumn>
+    );
+  };
+
+  const renderDesktop = () => {
+    return (
         <StyledInnerRow>
           <Tabs tabs={workplaces} OnClick={OnTitleClick} />
           <ExperienceContent selectedWorkplace={selectedWorkPlace} />
         </StyledInnerRow>
-      </StyledInnerColumn>
+    );
+  };
+
+  return (
+    <ExperienceContainer id="experience">
+      <Title style={titleStyle} text="Work experience" />
+      {width > 768 ? renderDesktop() : renderMobile()}
     </ExperienceContainer>
   );
 };
