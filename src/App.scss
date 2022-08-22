@@ -11,8 +11,8 @@
 
 //Global variables: (can also be defined using :root{})
 * {
-  --light-green: rgb(100, 255, 218);//#64ffda
-  --background-color: rgb(10, 25, 47);//#0a192f
+  --light-green: rgb(100, 255, 218); //#64ffda
+  --background-color: rgb(10, 25, 47); //#0a192f
   --font-color: rgb(204, 214, 246); //#0a192f
 }
 
@@ -25,14 +25,13 @@
 }
 
 body {
-  font-family: "Signika Negative", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  color: var(--font-color);
-  
   .main-container {
     margin: 0 auto;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--font-color);
   }
   .nav-bar,
   .main-container,
@@ -46,7 +45,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 1.35em;
-    //position: absolute;// this solves an annoying bug on chrome mobile view.. 
+    //position: absolute;// this solves an annoying bug on chrome mobile view..
   }
 }
 
@@ -60,13 +59,13 @@ a.link {
   // }
 }
 
-a.link-mobile{
+a.link-mobile {
   position: relative;
   text-decoration: none;
   color: var(--light-green);
   display: inline-block; // <= this is because the underscore animation breaks if the tag breaks line
   @media (min-width: 768px) {
-    display:none;
+    display: none;
   }
 }
 
@@ -75,7 +74,8 @@ a.link-mobile{
   to change directions use transform-origin: right/left/0%/100%
   since there is no transformation on the Y axis.
    */
-a.link::before, a.link-mobile::before  {
+a.link::before,
+a.link-mobile::before {
   content: "";
   position: absolute;
   display: block;
@@ -90,7 +90,8 @@ a.link::before, a.link-mobile::before  {
   transition: transform 0.3s ease;
 }
 
-a.link:hover::before, a.link-mobile:hover::before {
+a.link:hover::before,
+a.link-mobile:hover::before {
   transform: scaleX(1);
 }
 
