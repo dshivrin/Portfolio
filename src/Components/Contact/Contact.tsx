@@ -24,10 +24,6 @@ const ContactInner = styled(StyledInner)`
   margin: unset;
 `;
 
-const titleStyles = {
-  paddingBottom: "35px",
-}
-
 const contactInfo = configData.CONTACT_INFO;
 const externalUrls = configData.EXTERNAL_URLS;
 
@@ -38,7 +34,7 @@ const Contact = () => {
 
   return (
     <ContactContainer id="contact">
-      <Title style={titleStyles} text="So Now What?" />
+      <Title text="So Now What?" />
       <h3>Say Hello</h3>
       <br />
       <ContactInner>
