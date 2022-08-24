@@ -16,6 +16,7 @@ a.contact-url {
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: center;
+  color: var(--font-color) !important;//overrides bootstrap
 
   //hides the anchor text, in favor of accesability 
   text-indent: 100%;
@@ -24,6 +25,7 @@ a.contact-url {
 
   &:hover{
     filter: drop-shadow(0 0 1mm rgb(220, 210, 220));
+    color: var(--font-color) !important;//overrides bootstrap
   }
 
   &:active {

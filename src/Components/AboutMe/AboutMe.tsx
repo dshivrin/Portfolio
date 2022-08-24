@@ -4,6 +4,7 @@ import Title from "../Shared/Title/Title";
 import SkillsList from "./SkillsList";
 import { Container } from "../Shared/StyledComponents/Container";
 import styled from "styled-components";
+import Link from "Components/Shared/Link/Link";
 
 const profileImage = require("../../Media/profile picture.jpg");
 
@@ -14,7 +15,7 @@ const AboutContainer = styled(Container)`
   height: 100vh;
   @media (max-width: 768px) {
     width: auto;
-    height: 100%;//this component is heigher than 100vh
+    height: 100%; //this component is heigher than 100vh
     margin: 20px auto;
   }
 `;
@@ -28,7 +29,7 @@ const SkillsStyled = styled(Container)`
   align-content: "center";
   justify-content: "space-evenly";
   display: flex;
-  gap:35px;
+  gap: 35px;
   @media (max-width: 768px) {
     font-size: 1 em;
     font-size: 0.8em;
@@ -61,37 +62,30 @@ const AboutMe = () => {
                 In my journey I had an amazing experience working with small,
                 meduim and large companies, using variety of tools. I started at
                 a small company that provides the most effective{" "}
-                <a
-                  className="link company-url"
-                  target="blank"
+                <Link
+                  cssclass="link company-url"
                   href="https://www.niloosoft.com/?lang=en"
-                >
-                  HR solutions
-                </a>
+                  text="HR solutions"
+                />
                 , then dived into a{" "}
-                <a
-                  className="link company-url"
-                  target="blank"
+                <Link
+                  cssclass="link company-url"
                   href="https://www.sag121.com/"
-                >
-                  big data company
-                </a>
+                  text="big data company"
+                />
                 ,{" "}
-                <a
-                  className="link company-url"
-                  target="blank"
+                <Link
+                  cssclass="link company-url"
                   href="https://aeronautics-sys.com/"
-                >
-                  a security contracter
-                </a>{" "}
+                  text="a security contracter"
+                />
+                {" "}
                 and a{" "}
-                <a
-                  className="link company-url"
-                  target="blank"
+                <Link
+                  cssclass="link company-url"
                   href="https://www.smoove.io/"
-                >
-                  marketing automation company
-                </a>
+                  text="marketing automation company"
+                />
                 .
               </p>
               <br />
