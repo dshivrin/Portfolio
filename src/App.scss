@@ -69,31 +69,6 @@ a.link-mobile {
   }
 }
 
-/*
-  ^^ transform-origin default value is 50% 50% so it will start from the center.
-  to change directions use transform-origin: right/left/0%/100%
-  since there is no transformation on the Y axis.
-   */
-a.link::before,
-a.link-mobile::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--light-green);
-  transform: scaleX(0);
-  //transform-origin: 0%; // left
-  //transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-a.link:hover::before,
-a.link-mobile:hover::before {
-  transform: scaleX(1);
-}
 
 button {
   cursor: pointer;

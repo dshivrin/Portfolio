@@ -1,10 +1,11 @@
 import { StyledAnchor } from "../StyledComponents/Anchor";
+import "./Link.scss";
 
 const Link = (props: any) => {
-  const { cssclass, href, text } = props;
+  const { cssClass, href, text } = props;
 
   return (
-    <StyledAnchor className={cssclass} href={href} target="blank">
+    <StyledAnchor className={cssClass} href={href} target="blank">
       {text}
     </StyledAnchor>
   );

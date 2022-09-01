@@ -11,7 +11,7 @@ const ExperienceContent = (props: any) => {
       <br />
       <p>{workplace.description}</p>
       <br />
-      <DateRange from={workplace.from} to={workplace.to} format="MMM YYYY" />
+      <DateRange from={workplace.from} to={workplace.to} format="MMM YYYY" cssClass="date-range" />
     </div>
   );
 };
