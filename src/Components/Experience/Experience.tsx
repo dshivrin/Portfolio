@@ -8,6 +8,7 @@ import { Workplace } from "../../Core/types";
 import Tabs from "./Switchable/Tabs/Tabs";
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import Carousel from "./Carousel/Carousel";
+import "./Experience.scss";
 
 const StyledInnerColumn = styled(StyledInner)`
   flex-direction: column;
