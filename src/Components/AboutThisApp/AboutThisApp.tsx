@@ -29,9 +29,9 @@ const innerStyles = {
 const AboutThisApp = () => {
   return (
     <AboutContainer id="projects">
-      <Title text={"About This App"} />
+      <Title text={"Projects"} />
       <div style={innerStyles}>
-        <p>This is my playground, where I learn and experiment.</p>
+        <p>This app is my playground, where I learn and experiment.</p>
         <br />
         <p>
           Upcoming: I'm currently working on 2 projects.
