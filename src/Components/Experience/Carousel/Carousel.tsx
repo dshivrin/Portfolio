@@ -22,7 +22,7 @@ function CarouselMobile(props: ExperienceTabsProps) {
         return (
           <Carousel.Item key={`carousel-item-${index}`}>
             {/* This images is what gives the casousel height.*/}
-            <img className="d-block w-100 card" src={bgImage} alt="Blank background image" />
+            <img className="d-block w-100 card" src={bgImage} alt="Blank background" />
             <Carousel.Caption className={wp.name}>
               <Position workplace={wp} styles={additionalStyles} />
               <p>{wp.description}</p>

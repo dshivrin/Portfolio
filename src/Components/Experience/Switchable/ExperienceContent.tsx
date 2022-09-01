@@ -1,4 +1,4 @@
-import { ExperienceContentProps, Workplace } from "Core/types";
+import { Workplace } from "Core/types";
 import DateRange from "../../Shared/Date-range/Date-range";
 import Position from "./Position/Position";
 

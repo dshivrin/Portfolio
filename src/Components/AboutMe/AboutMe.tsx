@@ -99,7 +99,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div>
-            <img width={350} height={350} src={profileImage} alt="Profile picture" />
+            <img width={350} height={350} src={profileImage} alt="Profile" />
           </div>
         </StyledInner>
       </StyledInnerColumn>
