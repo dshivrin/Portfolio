@@ -3,7 +3,7 @@
 export type NavItemProps = {
   text: string;
   href: string;
-  cssclass: string;
+  cssClass: string;
 };
 
 export type TitleProps = {
@@ -55,6 +55,7 @@ export type DateRangeProps = {
   from: string | Date;
   to?: string | Date; //null = current year. moment(null) = moment() = current date
   format: string;
+  cssClass?: string; 
 };
 
 export type elementType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span";
