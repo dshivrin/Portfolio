@@ -1,0 +1,30 @@
+.card {
+  border-color: var(--light-green);
+}
+
+.carousel-indicators .active {
+  background-color: #64ffda !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 2.5rem !important;
+    font-size: 0.85em;
+  }
+
+  .Smoove {
+  }
+
+  .Aeronautics {
+    bottom: 4.3rem !important;
+  }
+
+  .Sagarmatha {
+  }
+
+  .Niloosoft {
+  }
+
+  .Orange {
+  }
+}

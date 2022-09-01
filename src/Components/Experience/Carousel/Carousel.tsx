@@ -2,8 +2,8 @@ import Carousel from "react-bootstrap/Carousel";
 import { ExperienceTabsProps } from "Core/types";
 import DateRange from "Components/Shared/Date-range/Date-range";
 import Position from "../Switchable/Position/Position";
-
-import bgImage from 'Media/calm-dark-blue-sea-background-picjumbo-com.jpg';
+import bgImage from "Media/Backgroung-Image.png";
+import "./Carousel.scss";
 
 function CarouselMobile(props: ExperienceTabsProps) {
   const workplaces = props.tabs.sort((a, b) => {
@@ -13,18 +13,20 @@ function CarouselMobile(props: ExperienceTabsProps) {
   const additionalStyles = {
     fontSize: "0.45em",
     alignItems: "center",
+    flexDirection: "row",
   };
 
   return (
     <Carousel interval={null}>
       {workplaces.map((wp, index) => {
         return (
-          <Carousel.Item>
-            <img className="d-block w-100" src={bgImage}/>
-            <Carousel.Caption>
+          <Carousel.Item key={`carousel-item-${index}`}>
+            {/* This images is what gives the casousel height.*/}
+            <img className="d-block w-100 card" src={bgImage} />
+            <Carousel.Caption className={wp.name}>
               <Position workplace={wp} styles={additionalStyles} />
-              <DateRange from={wp.from} to={wp.to} format="MMM YYYY" />
               <p>{wp.description}</p>
+              <DateRange from={wp.from} to={wp.to} format="MMM YYYY" />
             </Carousel.Caption>
           </Carousel.Item>
         );
