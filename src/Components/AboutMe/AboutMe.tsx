@@ -1,4 +1,4 @@
-import { elementType } from "Core/types";
+
 import { StyledInner } from "../Shared/StyledComponents/InnerContainer";
 import Title from "../Shared/Title/Title";
 import SkillsList from "./SkillsList";
@@ -99,7 +99,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div>
-            <img width={350} height={350} src={profileImage} />
+            <img width={350} height={350} src={profileImage} alt="Profile picture" />
           </div>
         </StyledInner>
       </StyledInnerColumn>
