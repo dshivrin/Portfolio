@@ -32,6 +32,7 @@ const Navigation = () => {
           <NavbarLinkContainer>
             <NavItem cssClass="link" href="#about" text="About" />
             <NavItem cssClass="link" href="#experience" text="Experience" />
+            <NavItem cssClass="link" href="#projects" text="Projects" />
             <NavItem cssClass="link" href="#contact" text="Contact" />
             <DownloadResumeButton href={externalUrls.RESUME_URL}>
               RESUME
@@ -64,6 +65,13 @@ const Navigation = () => {
             onClick={() => setExtendNavbar(false)}
           >
             Experience
+          </a>
+          <a
+            className="link-mobile"
+            href="#projects"
+            onClick={() => setExtendNavbar(false)}
+          >
+            Projects
           </a>
           <a
             className="link-mobile"

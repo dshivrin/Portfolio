@@ -28,7 +28,7 @@ const innerStyles = {
 //Logos are taken from https://www.freepnglogos.com/
 const AboutThisApp = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="projects">
       <Title text={"About This App"} />
       <div style={innerStyles}>
         <p>This is my playground, where I learn and experiment.</p>
