@@ -13,7 +13,7 @@ const Position = (props: PositionProps) => {
       <h1 className="position">{workplace.position} at</h1>
       {/* <ButtonLink {...workplace} /> */}
       <Link
-                  cssclass="link company-link"
+                  cssClass="link company-link"
                   href={workplace.website}
                   text={workplace.name}
                 />

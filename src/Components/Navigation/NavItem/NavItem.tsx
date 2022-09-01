@@ -3,11 +3,11 @@ import { StyledNavItem } from "../../Shared/StyledComponents/NavItem";
 
 const NavItem = (props: NavItemProps) => {
 
-const {cssclass, href, text} = props;
+const {cssClass, href, text} = props;
 
   return (
     <StyledNavItem>
-      <a className={cssclass} href={href}>{text}</a>
+      <a className={cssClass} href={href}>{text}</a>
     </StyledNavItem>
   );
 };

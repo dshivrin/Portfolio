@@ -30,9 +30,9 @@ const Navigation = () => {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavItem cssclass="link" href="#about" text="About" />
-            <NavItem cssclass="link" href="#experience" text="Experience" />
-            <NavItem cssclass="link" href="#contact" text="Contact" />
+            <NavItem cssClass="link" href="#about" text="About" />
+            <NavItem cssClass="link" href="#experience" text="Experience" />
+            <NavItem cssClass="link" href="#contact" text="Contact" />
             <DownloadResumeButton href={externalUrls.RESUME_URL}>
               RESUME
             </DownloadResumeButton>

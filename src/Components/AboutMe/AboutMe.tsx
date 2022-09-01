@@ -63,26 +63,26 @@ const AboutMe = () => {
                 meduim and large companies, using variety of tools. I started at
                 a small company that provides the most effective{" "}
                 <Link
-                  cssclass="link company-url"
+                  cssClass="link company-url"
                   href="https://www.niloosoft.com/?lang=en"
                   text="HR solutions"
                 />
                 , then dived into a{" "}
                 <Link
-                  cssclass="link company-url"
+                  cssClass="link company-url"
                   href="https://www.sag121.com/"
                   text="big data company"
                 />
                 ,{" "}
                 <Link
-                  cssclass="link company-url"
+                  cssClass="link company-url"
                   href="https://aeronautics-sys.com/"
                   text="a security contracter"
                 />
                 {" "}
                 and a{" "}
                 <Link
-                  cssclass="link company-url"
+                  cssClass="link company-url"
                   href="https://www.smoove.io/"
                   text="marketing automation company"
                 />

@@ -47,7 +47,7 @@ const AboutThisApp = () => {
         <p>
           If you wish to view the source code for this project, you can go to my{" "}
           <Link
-            cssclass="link"
+            cssClass="link"
             href="https://github.com/dshivrin/Portfolio"
             text="github account"
           />
@@ -58,7 +58,7 @@ const AboutThisApp = () => {
           If you wish to explore some of the anmimations used here you can
           explore my{" "}
           <Link
-            cssclass="link"
+            cssClass="link"
             href="https://codepen.io/dshivrin"
             text="codepen"
           />
