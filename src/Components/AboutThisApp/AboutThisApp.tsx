@@ -16,10 +16,6 @@ const AboutContainer = styled(Container)`
   }
 `;
 
-const listStyle = {
-  listStyle: "none",
-};
-
 const innerStyles = {
   padding: "25px 15px",
   // textAlign: "flex-start"
@@ -31,27 +27,17 @@ const AboutThisApp = () => {
     <AboutContainer id="projects">
       <Title text={"Projects"} />
       <div style={innerStyles}>
-        <p>This app is my playground, where I learn and experiment.</p>
+        <p></p>
+        <br />
         <br />
         <p>
-          Upcoming: I'm currently working on 2 projects.
-          <ul style={listStyle}>
-            <li>1.Conway's game of life</li>
-            <li>
-              2. A new arduino leds project (previous one accidentally destroyed
-              during renovations)
-            </li>
-          </ul>
-        </p>
-        <br />
-        <p>
-          If you wish to view the source code for this project, you can go to my{" "}
+          Visit my{" "}
           <Link
             cssClass="link"
-            href="https://github.com/dshivrin/Portfolio"
+            href="https://github.com/dshivrin/"
             text="github account"
-          />
-          .
+          />{" "}
+          to view the sourcecode of this ptoject and others.
         </p>
         <p>
           {" "}
